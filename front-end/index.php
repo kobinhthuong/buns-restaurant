@@ -54,15 +54,16 @@
             <div class="container">
                 <div class="row">
                     <!--<div class="col-md-6 col-xl-6 mb-5 mb-md-0 pb-5 pb-md-0">-->
-                    <div class>
+                    <div class=""col-6>
                         <!--                        <div class="img-styleBox">
                                                     <div class="styleBox-border">-->
                         <img class="styleBox-img1 img-fluid" src="img/home/about-img1.png" alt="">
                         <!--                            </div>
                                                 </div>-->
                     </div>
-                    <div class="col-md-6 pl-md-5 pl-xl-0 offset-xl-1 col-xl-5"> <!--put the text in the right hand side-->
-                        <div class="section-intro mb-lg-4">
+<!--                    <div class="col-md-6 pl-md-5 pl-xl-0 offset-xl-1 col-xl-5"> put the text in the right hand side-->
+                         <div class="col-6">
+                             <div class="section-intro mb-lg-4">
                             <h4 class="intro-title">About Us</h4>
                             <h2>BUNS Restaurant </h2>
                         </div>

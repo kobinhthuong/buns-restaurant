@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/admin_buns_restaurant/index.php</file>
-            <file>file:/C:/xampp/htdocs/admin_buns_restaurant/manageImages/images.php</file>
-            <file>file:/C:/xampp/htdocs/admin_buns_restaurant/manageDishes/dishes.php</file>
-            <file>file:/C:/xampp/htdocs/admin_buns_restaurant/basic_tables.html</file>
-            <file>file:/C:/xampp/htdocs/admin_buns_restaurant/layouts/sidebar/navbar.php</file>
-            <file>file:/C:/xampp/htdocs/admin_buns_restaurant/managePosts/posts.php</file>
+            <file>file:/C:/xampp/htdocs/BUNs/buns-restaurant/back-end/index.php</file>
+            <file>file:/C:/xampp/htdocs/BUNs/buns-restaurant/back-end/manageDishes/add_dishes.php</file>
+            <file>file:/C:/xampp/htdocs/BUNs/buns-restaurant/back-end/layouts/header/header.php</file>
+            <file>file:/C:/xampp/htdocs/BUNs/buns-restaurant/back-end/manageDishes/delete_dishes.php</file>
         </group>
     </open-files>
 </project-private>

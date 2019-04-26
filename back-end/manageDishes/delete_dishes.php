@@ -1,12 +1,51 @@
 <!--header-->
-//<?php include ('../layouts/header/header.php');
-//$conn=mysql_connect("localhost","root","root") or die("can't connect this database");
-//?>     
-<ul>
-    <li><a href="create.php"><strong>Create</strong></a> - add a dish</li>
-    <li><a href="read.php"><strong>Read</strong></a> - find a dish</li>
-    <li><a href="update.php"><strong>Update</strong></a> - edit a dish</li>
-</ul>
+<?php include ('layouts/header/header.php'); ?>     
+<!DOCTYPE html>
+<?php
+$db = mysqli_connect("localhost", "root", "", "database_structure");
+
+if (isset($_POST['submit'])){
+    delete_manga();
+}
+
+function delete_manga(){
+    global $db; 
+    $manga_name = $_POST['manga_name'];
+    $author_name = $_POST['author_name'];
+    $errors = array();
+    
+    $get_manga = mysqli_query($db, "SELECT manga_id from mangas WHERE name = '$manga_name'");
+    $manga_id_result = mysqli_fetch_all($get_manga);
+    $manga_id = $manga_id_result['manga_id'];
+    mysqli_query($db, "DELETE FROM mangas WHERE manga_id = '$manga_id';");
+    echo "Delete manga successfully!";
+    
+}
+?>
+<html>
+    <head>
+        <meta charset="UTF-8"
+              <title><h3>Delete Manga</h3></title>
+    </head>
+    <body>
+        <form action="delete_manga.php" method="POST">
+            <h4>Please enter manga that you want to delete</h4>
+            Manga name:
+            <div>
+                <input type="text" name="manga_name" value="">
+            </div>
+            Author name:
+            <div>
+                <input type="text" name="author_name" value="">
+            </div>
+            <h6>
+            <div>
+                <button type="submit" name="submit">Delete</button>
+            </div>
+            </h6>
+        </form>
+    </body>
+</html>
 
 
 <!DOCTYPE HTML>

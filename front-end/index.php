@@ -22,7 +22,11 @@
                     <div class="container box_1620">
                         <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
                         <!--                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<<<<<<< HEAD
                                                     <span class="icon-bar"></span>
+=======
+                                                                                <span class="icon-bar"></span>
+>>>>>>> e8de1fe8308b7ef8bd4e89dd649686ec236df6c2
                                                     <span class="icon-bar"></span>
                                                     <span class="icon-bar"></span>
                                                 </button>-->
@@ -31,6 +35,7 @@
                             <ul class="nav navbar-nav menu_nav justify-content-end">
                                 <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
                                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> 
                                 <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                                 <li class="nav-item"><a class="nav-link" href="view.html">View</a>
                                 <li class="nav-item"><a class="nav-link" href="discount.html">Discount</a>
@@ -43,7 +48,7 @@
             </div>
         </header>
         <!--================Header Menu Area =================-->
-
+        
         <!--================About Section start =================-->
         <!--        <section class="about section-margin pb-xl-70">-->
         <section class>
@@ -51,6 +56,7 @@
                 <div class="row">
                     <!--<div class="col-md-6 col-xl-6 mb-5 mb-md-0 pb-5 pb-md-0">-->
                     <div class>
+                    <div class=""col-6>
                         <!--                        <div class="img-styleBox">
                                                     <div class="styleBox-border">-->
                         <img class="styleBox-img1 img-fluid" src="img/home/about-img1.png" alt="">
@@ -59,6 +65,11 @@
                     </div>
                     <div class="col-md-6 pl-md-5 pl-xl-0 offset-xl-1 col-xl-5"> <!--put the text in the right hand side-->
                         <div class="section-intro mb-lg-4">
+
+<!--                    <div class="col-md-6 pl-md-5 pl-xl-0 offset-xl-1 col-xl-5"> put the text in the right hand side-->
+                         <div class="col-6">
+                             <div class="section-intro mb-lg-4">
+
                             <h4 class="intro-title">About Us</h4>
                             <h2>BUNS Restaurant </h2>
                         </div>
@@ -256,10 +267,27 @@
     </footer>
 
     <!-- ================ End footer Area ================= -->
+                <h3>BUNS Restaurant</h3> 
+                   <p> since 2009 </p>
+                <p>Address: 19 Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội, Việt Nam </p> 
+                <p>Phone: (84-24) 3824 0926 - Hotline: (84) 916 193 883</p> 
+                <p>Email: BunsRestaurant@gmail.com</p>    
+                </center>
+                
+            </div>
+                                           
+                   <div class="footer-bottom">
+                       <center>
+                    <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i></a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </center>
+                </div>
+            </div>
+            
+        </footer>
 
-
-
-
+        <!-- ================ End footer Area ================= -->
     <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
@@ -269,4 +297,13 @@
     <script src="js/mail-script.js"></script>
     <script src="js/main.js"></script>
 </body>
+        <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+        <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+        <script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

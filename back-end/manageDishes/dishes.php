@@ -1,7 +1,8 @@
 <!--header-->
-<?php include ('layouts/header/header.php'); ?>     
+<?php include ('../layouts/header/header.php');
+?>     
 
-<!DOCTYPE HTML>
+<!--<!DOCTYPE HTML>-->
 <html>
     <body>   
         <!-- Navigation -->
@@ -73,7 +74,7 @@
 
 
                     <!--                footer-->
-                    <?php include ('layouts/footer/footer.php'); ?> 
+                    <?php include ('../layouts/footer/footer.php'); ?> 
                 </div>
             </div>
             <!-- /#page-wrapper -->

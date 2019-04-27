@@ -1,15 +1,15 @@
 <div class="left">
     <?php
-    if(isset($_GET['ac']))
+    if(isset($_GET['dish']))
         {
-        $tam=$_GET['ac'];
+        $d=$_GET['dish'];
         }else
             {
-            $tam='';
-            }if($tam=='add')
+            $d='';
+            }if($d=='add')
                     {
                 include('back-end/manageDishes/add.php');
-                    }if($tam=='edit'){
+                    }if($d=='edit'){
                         include('back-end/manageDishes/edit.php');
                     }
     ?>

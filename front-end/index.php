@@ -30,12 +30,11 @@
             </div>
         </section>
         <!--================About Section Ends =================-->
-
-<<<<<<< HEAD
+        
         <!--================ Best Sellers Sectio n Start =================-->
-=======
+
         <!--================ Best Sellers Section Starts =================-->
->>>>>>> 55321e7820ca9d532920563fd94b431e7292ff12
+
         <section class="section-margin mb-lg-100">
             <div class="container">
                 <div class="section-intro mb-75px">

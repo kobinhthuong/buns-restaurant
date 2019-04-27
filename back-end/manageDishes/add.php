@@ -1,9 +1,9 @@
-<form action="back-end/managePosts/handling.php" method="post" enctype="multipart/form-data">
+<form action="back-end/manageDishes/handling.php" method="post" enctype="multipart/form-data">
     <table width="100%" border="1">
         <html>        
             <head>
                 <meta charset="UTF-8"
-            <td colspan="2" ><div style="color:blue;font-size:10px" align="center">Add Dish</div><br><br> </td>
+            <td colspan="2" ><div style="color:blue;font-size:20px" align="center">Add Dish</div><br><br> </td>
             <form action="" method="post" enctype="multipart/form-data" >
                 <table width="990px" >
                     <tr>
@@ -41,12 +41,12 @@
                                     relative_urls: false
                                 });
 
-                            </script>
-                            <textarea id="description" name="description" ></textarea>
+                            </script>  
+                            <textarea id="description" name="description" ></textarea>  
+
                         </td>
                     </tr>
-                    <tr>
-                        <td>&nbsp;</td>
+                    <tr>                     
                         <td>
                             <br>
                             <input type="submit" name="add_dish" value="OK" style="width:100px;height:30px;font-size:15px" >

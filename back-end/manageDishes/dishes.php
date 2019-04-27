@@ -1,11 +1,7 @@
-
-//<?php
-include ('../layouts/header/header.php');
-//$conn=mysql_connect("localhost","root","root") or die("can't connect this database");
-//
-?>  
+ 
 <?php
-$sql = "select * from dishes where id = dishes_id desc";
+include ('../layouts/header/header.php');
+$sql ="select * from dishes order by id desc" or die ();
 $run = mysqli_query($conn, $sql);
 
 ?>
@@ -21,7 +17,7 @@ $run = mysqli_query($conn, $sql);
                 <div class="xs">
                     <h3>Dishes Table</h3>
                     <div class="page-header">
-                        <div class="page-title">
+                        <div class="page-name">
                             <ol class="text-right">
                                 <a href="add.php" target="_blank">Add Dish</a> </br>
 
@@ -38,12 +34,31 @@ $run = mysqli_query($conn, $sql);
                                 <th>Updated at</th>
                                 <th>Action</th>
                             </tr>
+                            <?php
+                            $id = 0;
+                            while ($close = mysqli_fetch_array($run)) {
+                                ?>
+                                <tr>
+                                    <td><?php echo $i ?></td>
+                                    <td><?php echo $close['category_id'] ?></td>
+                                    <td><?php echo $close['name'] ?></td>
+                                    <td><?php echo $close['description'] ?></td>
+                                    <td><img src="back-end/manageDishes/uploads/<?php echo $close['photo'] ?>" width="60px" height="60px"></td>
+                                    <td><?php echo $close['is_shown'] ?></td>
+                                    <td><a href ="index.php?manage=manageDishes&ac=edit&id=<?php echo $close['id'] ?>" >Edit</a></td>
+                                    <td><a href="back-end/manageDishes/handling.php&id=<?php echo $close['id'] ?>">Delete</a></td>
+                                </tr>
+                                <?php
+                                $i++;
+                            }
+                            ?>
                         </thead>
+
                         <tbody>
                             <tr class="active">
                                 <th scope="row">1</th>
-                                <td>Column content</td>
-                                <td>Column content</td>
+                                <td>Cream</td>
+                                <td>19/04/30</td>
                                 <td>
                                     <a href="edit.php" target="_blank">Edit</a> </br>
                                     <a href="delete.php" target="_blank">Delete</a>

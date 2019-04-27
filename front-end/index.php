@@ -22,7 +22,7 @@
                     <div class="container box_1620">
                         <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
                         <!--                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                                                                <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
                                                     <span class="icon-bar"></span>
                                                     <span class="icon-bar"></span>
                                                 </button>-->
@@ -30,16 +30,8 @@
                         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                             <ul class="nav navbar-nav menu_nav justify-content-end">
                                 <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-                                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> 
-                                <!--<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a>-->
-                                <li class="nav-item submenu dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                       aria-expanded="false">Menu</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="setMenu.html">Set Menu</a></li>
-                                    </ul>
-                                </li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                                 <li class="nav-item"><a class="nav-link" href="view.html">View</a>
                                 <li class="nav-item"><a class="nav-link" href="discount.html">Discount</a>
                                 <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a>                                
@@ -51,7 +43,6 @@
             </div>
         </header>
         <!--================Header Menu Area =================-->
-
 
         <!--================About Section start =================-->
         <!--        <section class="about section-margin pb-xl-70">-->
@@ -239,48 +230,43 @@
         </section>
         <!--================ section end =================-->  
 
-
-
-
-
-
-
+        <hr style="display: block; margin-bottom: 50px; margin-left: 100px; margin-right: auto; border-style: inset; border-width: 1px;">
         <!-- ================ start footer Area ================= -->
         <footer class="text-align-center padding-top-20">
             <div>
                 <center>
-                <h3>BUNS Restaurant</h3> 
-                   <p> since 2009 </p>
-                <p>Address: 19 Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội, Việt Nam </p> 
-                <p>Phone: (84-24) 3824 0926 - Hotline: (84) 916 193 883</p> 
-                <p>Email: BunsRestaurant@gmail.com</p>    
+                    <h3>BUNS Restaurant</h3> 
+                    <p> since 2009 </p>
+                    <p>Address: 19 Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội, Việt Nam </p> 
+                    <p>Phone: (84-24) 3824 0926 - Hotline: (84) 916 193 883</p> 
+                    <p>Email: BunsRestaurant@gmail.com</p>    
                 </center>
-                
+
             </div>
-                                           
-                   <div class="footer-bottom">
-                       <center>
+
+            <div class="footer-bottom">
+                <center>
                     <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i></a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    </center>
-                </div>
+                </center>
             </div>
-            
-        </footer>
+        </div>
 
-        <!-- ================ End footer Area ================= -->
+    </footer>
+
+    <!-- ================ End footer Area ================= -->
 
 
 
 
-        <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
-        <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
-        <script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+    <script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

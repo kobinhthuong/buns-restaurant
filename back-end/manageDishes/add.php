@@ -1,12 +1,18 @@
 
-<?php
-$db = mysqli_connect("localhost", "root", "", "buns");
-session_start();
-
-if (isset($_POST['submit'])) {
-    add_dish();
-}
-?>
+    <?php
+    $sql = "select * from loaisp ";
+    $run = mysqli_query($conn, $sql);
+    ?>
+    <tr>
+        <td>loai sp</td>
+        <td><select name="loaisp">
+                <?php
+                while($dong = mysqli_fetch_array($run)){
+                    ?>
+                <option value="<?php echo $dong['id_loaisp']?>" ><?php echo $dong['tenloaisp'] ?></option> 
+                <?php } ?>
+            </select></td>
+    </tr>
 
 <html>
     <head>

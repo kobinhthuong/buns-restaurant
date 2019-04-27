@@ -30,8 +30,11 @@
             </div>
         </section>
         <!--================About Section Ends =================-->
+        
+        <!--================ Best Sellers Sectio n Start =================-->
 
         <!--================ Best Sellers Section Starts =================-->
+
         <section class="section-margin mb-lg-100">
             <div class="container">
                 <div class="section-intro mb-75px">
@@ -46,13 +49,7 @@
                             <h3>Mountain Mike Pizza</h3>
                             </a>
                             <div class="d-flex justify-content-between">
-                                <ul class="rating-star">
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                </ul>
+                                
                                 <h3 class="price-tag">$35</h3>
                             </div>
                         </div>
@@ -64,13 +61,7 @@
                             <h3>Patatas Bravas</h3>
                             </a>
                             <div class="d-flex justify-content-between">
-                                <ul class="rating-star">
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                </ul>
+                                
                                 <h3 class="price-tag">$30</h3>
                             </div>
                         </div>
@@ -82,13 +73,7 @@
                             <h3>Pulled Sandwich</h3>
                             </a>
                             <div class="d-flex justify-content-between">
-                                <ul class="rating-star">
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                    <li><i class="ti-star"></i></li>
-                                </ul>
+                               
                                 <h3 class="price-tag">$20</h3>
                             </div>
                         </div>

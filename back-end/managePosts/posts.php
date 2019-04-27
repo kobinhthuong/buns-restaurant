@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html>
     <!--header-->
-    <?php include ('layouts/header/header.php'); ?>     
+    <?php include ('../layouts/header/header.php'); ?>     
     <!-- Navigation -->
-    <?php include ('layouts/sidebar/navbar.php'); ?> 
+    <?php include ('../layouts/sidebar/navbar.php'); ?> 
     <body>
         <div id="page-wrapper">
         <div class="col-md-12 graphs">
@@ -72,7 +72,7 @@
   
 	
   <!--                footer-->
-                <?php include ('layouts/footer/footer.php'); ?> 
+                <?php include ('../layouts/footer/footer.php'); ?> 
    </div>
       </div>
       <!-- /#page-wrapper -->

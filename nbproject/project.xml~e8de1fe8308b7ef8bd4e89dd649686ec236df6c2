@@ -3,10 +3,7 @@
     <type>org.netbeans.modules.php.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/php-project/1">
-            <name>admin_buns_restaurant</name>
+            <name>buns-restaurant</name>
         </data>
-        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
-            <word>dashbr</word>
-        </spellchecker-wordlist>
     </configuration>
 </project>

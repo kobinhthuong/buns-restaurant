@@ -7,10 +7,6 @@
             <form action="" method="post" enctype="multipart/form-data" >
                 <table width="990px" >
                     <tr>
-                        <td>Category_id</td>
-                        <td><input type="text" name="category_id"></td>
-                    </tr>
-                    <tr>
                         <td width="150px" >Name : </td>
                         <td width="840px">
                             <input style="width:400px;margin-top:3px;margin-bottom:3px;" name="name" value="" >

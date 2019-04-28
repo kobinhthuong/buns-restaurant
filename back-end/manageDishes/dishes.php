@@ -40,7 +40,6 @@ $run = mysqli_query($conn, $sql);
                                 ?>
                                 <tr>
                                     <td><?php echo $i ?></td>
-                                    <td><?php echo $close['category_id'] ?></td>
                                     <td><?php echo $close['name'] ?></td>
                                     <td><?php echo $close['description'] ?></td>
                                     <td><img src="back-end/manageDishes/uploads/<?php echo $close['photo'] ?>" width="60px" height="60px"></td>

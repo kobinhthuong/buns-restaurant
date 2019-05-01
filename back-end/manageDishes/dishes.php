@@ -1,6 +1,5 @@
 <!--header-->
-<?php include ('../layouts/header/header.php');
-?>     
+<?php include ('../layouts/header/header.php');?>     
 
 <!--<!DOCTYPE HTML>-->
 <html>

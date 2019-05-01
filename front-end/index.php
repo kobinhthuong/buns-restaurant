@@ -31,11 +31,8 @@
         </section>
         <!--================About Section Ends =================-->
 
-<<<<<<< HEAD
-        <!--================ Best Sellers Sectio n Start =================-->
-=======
         <!--================ Best Sellers Section Starts =================-->
->>>>>>> 55321e7820ca9d532920563fd94b431e7292ff12
+
         <section class="section-margin mb-lg-100">
             <div class="container">
                 <div class="section-intro mb-75px">
@@ -50,55 +47,55 @@
                             <h3>Mountain Mike Pizza</h3>
                             </a>
                             <div class="d-flex justify-content-between">
-                                
+
                                 <h3 class="price-tag">$35</h3>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="featured-item">
                         <img class="card-img rounded-0" src="img/home/featured2.png" alt="">
                         <div class="item-body">
                             <h3>Patatas Bravas</h3>
                             </a>
                             <div class="d-flex justify-content-between">
-                                
+
                                 <h3 class="price-tag">$30</h3>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="featured-item">
                         <img class="card-img rounded-0" src="img/home/featured3.png" alt="">
                         <div class="item-body">
                             <h3>Pulled Sandwich</h3>
                             </a>
                             <div class="d-flex justify-content-between">
-                               
+
                                 <h3 class="price-tag">$20</h3>
                             </div>
                         </div>
-<!--                    </div>
-                                        <div class="featured-item">
-                                            <img class="card-img rounded-0" src="img/home/featured1.png" alt="">
-                                            <div class="item-body">
-                                                    <h3>Mountain Mike Pizza</h3>
-                                                </a>
-                                                <p>Whales and darkness moving</p>
-                                                <div class="d-flex justify-content-between">
-                                                    <ul class="rating-star">
-                                                        <li><i class="ti-star"></i></li>
-                                                        <li><i class="ti-star"></i></li>
-                                                        <li><i class="ti-star"></i></li>
-                                                        <li><i class="ti-star"></i></li>
-                                                        <li><i class="ti-star"></i></li>
-                                                    </ul>
-                                                    <h3 class="price-tag">$35</h3>
-                                                </div>
-                                            </div>
-                                        </div>-->
+                        <!--                    </div>
+                                                                <div class="featured-item">
+                                                                    <img class="card-img rounded-0" src="img/home/featured1.png" alt="">
+                                                                    <div class="item-body">
+                                                                            <h3>Mountain Mike Pizza</h3>
+                                                                        </a>
+                                                                        <p>Whales and darkness moving</p>
+                                                                        <div class="d-flex justify-content-between">
+                                                                            <ul class="rating-star">
+                                                                                <li><i class="ti-star"></i></li>
+                                                                                <li><i class="ti-star"></i></li>
+                                                                                <li><i class="ti-star"></i></li>
+                                                                                <li><i class="ti-star"></i></li>
+                                                                                <li><i class="ti-star"></i></li>
+                                                                            </ul>
+                                                                            <h3 class="price-tag">$35</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>-->
+                    </div>
                 </div>
-            </div>
         </section>
         <!--================Featured Section End =================-->
 
@@ -164,61 +161,19 @@
         </section>
         <!--================ section end =================-->  
 
-        <hr style="display: block; margin-bottom: 50px; margin-left: 100px; margin-right: auto; border-style: inset; border-width: 1px;">
+<!--        <hr style="display: block; margin-bottom: 50px; margin-left: 100px; margin-right: auto; border-style: inset; border-width: 1px;">-->
         <!-- ================ start footer Area ================= -->
-        <footer class="text-align-center padding-top-20">
-            <div>
-                <center>
-                    <h3>BUNS Restaurant</h3> 
-                    <p> since 2009 </p>
-                    <p>Address: 19 Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội, Việt Nam </p> 
-                    <p>Phone: (84-24) 3824 0926 - Hotline: (84) 916 193 883</p> 
-                    <p>Email: BunsRestaurant@gmail.com</p>    
-                </center>
-
-            </div>
-
-            <div class="footer-bottom">
-                <center>
-                    <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i></a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                </center>
-            </div>
-        </div>
-
-    </footer>
+       <?php include ('layouts/footer/footer.php');?>     
 
     <!-- ================ End footer Area ================= -->
-    <h3>BUNS Restaurant</h3> 
-    <p> since 2009 </p>
-    <p>Address: 19 Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội, Việt Nam </p> 
-    <p>Phone: (84-24) 3824 0926 - Hotline: (84) 916 193 883</p> 
-    <p>Email: BunsRestaurant@gmail.com</p>    
-</center>
-
-</div>
-
-<div class="footer-bottom">
-    <center>
-        <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i></a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-    </center>
-</div>
-</div>
-
-</footer>
-
-<!-- ================ End footer Area ================= -->
-<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
-<script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="vendors/nice-select/jquery.nice-select.min.js"></script>
-<script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/main.js"></script>
+    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+    <script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
 <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>

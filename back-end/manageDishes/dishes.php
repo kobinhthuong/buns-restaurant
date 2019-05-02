@@ -4,6 +4,7 @@
  
 <?php
 include ('../layouts/header/header.php');
+include '../config.php';
 $sql ="select * from dishes order by id desc" or die ();
 $run = mysqli_query($conn, $sql);
 
@@ -35,29 +36,28 @@ $run = mysqli_query($conn, $sql);
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
-                                <th>Updated at</th>
-                                <th>Action</th>
+                                <th>Description</th>
+                                <th>Image</th>
+                                <th colspan="2"><div align="center">Action</div></th>
                             </tr>
                             <?php
-                            $id = 0;
                             while ($close = mysqli_fetch_array($run)) {
                                 ?>
                                 <tr>
-                                    <td><?php echo $i ?></td>
+                                    <td><?php echo $close['id'] ?></td>
                                     <td><?php echo $close['name'] ?></td>
-                                    <td><?php echo $close['description'] ?></td>
+                                    <td><?php echo $close['discription'] ?></td>
                                     <td><img src="back-end/manageDishes/uploads/<?php echo $close['photo'] ?>" width="60px" height="60px"></td>
-                                    <td><?php echo $close['is_shown'] ?></td>
-                                    <td><a href ="index.php?manage=manageDishes&ac=edit&id=<?php echo $close['id'] ?>" >Edit</a></td>
-                                    <td><a href="back-end/manageDishes/handling.php&id=<?php echo $close['id'] ?>">Delete</a></td>
+                                    <td align="center"><a href ="index.php?manage=manageDishes&ac=edit&id=<?php echo $close['id'] ?>" >Edit</a></td>
+                                    <td align="center"><a href="back-end/manageDishes/handling.php&id=<?php echo $close['id'] ?>">Delete</a></td>
                                 </tr>
                                 <?php
-                                $i++;
                             }
                             ?>
                         </thead>
+                    </table>
 
-                        <tbody>
+<!--                        <tbody>
                             <tr class="active">
                                 <th scope="row">1</th>
                                 <td>Cream</td>
@@ -104,16 +104,14 @@ $run = mysqli_query($conn, $sql);
                                 </td>
                             </tr>
                         </tbody>
-                    </table>
-
-
-
-                    <!--                footer-->
-                    <?php include ('../layouts/footer/footer.php'); ?> 
+                    </table>-->
                 </div>
             </div>
+            <?php include ('../layouts/footer/footer.php'); ?>
             <!-- /#page-wrapper -->
         </div>
+        <!--                footer-->
+                    
         <!-- /#wrapper -->
         <!-- Nav CSS -->
         <link href="css/custom.css" rel="stylesheet">

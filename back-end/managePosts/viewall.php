@@ -42,8 +42,8 @@ $run = mysqli_query($conn, $sql);
                                         <td><?php echo $dong['id'] ?></td>
                                         <td><?php echo $dong['category_id'] ?></td>
                                         <td><?php echo $dong['title'] ?></td>
-                                        <!--<td><?php // echo $dong['summary']  ?></td>-->
-                                        <!--<td><?php // echo $dong['content']  ?></td>-->
+                                        <!--<td><?php // echo $dong['summary']   ?></td>-->
+                                        <!--<td><?php // echo $dong['content']   ?></td>-->
                                         <td><img src="back-end/managePosts/uploads/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
                                         <td><?php echo $dong['is_shown'] ?></td>
                                         <td align="center"><a href ="index.php?quanli=managePosts&ac=edit&id=<?php echo $dong['id'] ?>" >Edit</a></td>
@@ -83,13 +83,14 @@ $run = mysqli_query($conn, $sql);
     //<?php
 ////    $id=0; why do u set this id as 0?
 //    while ($dong = mysqli_fetch_array($run)) {
-//        ?>
+//        
+?>
         <tr>
             <td>//<?php echo $dong['id'] ?></td>
             <td>//<?php echo $dong['category_id'] ?></td>
             <td>//<?php echo $dong['title'] ?></td>
-            <td>//<?php // echo $dong['summary']  ?></td>
-            <td>//<?php // echo $dong['content']  ?></td>
+            <td>//<?php // echo $dong['summary']   ?></td>
+            <td>//<?php // echo $dong['content']   ?></td>
             <td><img src="back-end/managePosts/uploads///<?php echo $dong['hinhanh'] ?>" width="60px" height="60px"></td>
             <td>//<?php echo $dong['is_shown'] ?></td>
             <td><a href ="index.php?quanli=managePosts&ac=edit&id=//<?php echo $dong['id'] ?>" >Edit</a></td>
@@ -97,5 +98,6 @@ $run = mysqli_query($conn, $sql);
         </tr>
         //<?php
 //    }
-//    ?>
+//    
+?>
 </table>-->

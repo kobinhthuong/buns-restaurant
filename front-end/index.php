@@ -30,6 +30,11 @@
             </div>
         </section>
         <!--================About Section Ends =================-->
+<<<<<<< HEAD
+=======
+        
+        <!--================ Best Sellers Sectio n Start =================-->
+>>>>>>> c69e0c688dbdb43decbab8ea55e9434e4c9482d2
 
         <!--================ Best Sellers Section Starts =================-->
 

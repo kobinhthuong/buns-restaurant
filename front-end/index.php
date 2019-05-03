@@ -30,11 +30,6 @@
             </div>
         </section>
         <!--================About Section Ends =================-->
-<<<<<<< HEAD
-=======
-        
-        <!--================ Best Sellers Sectio n Start =================-->
->>>>>>> c69e0c688dbdb43decbab8ea55e9434e4c9482d2
 
         <!--================ Best Sellers Section Starts =================-->
 
@@ -166,27 +161,11 @@
         </section>
         <!--================ section end =================-->  
 
-<!--        <hr style="display: block; margin-bottom: 50px; margin-left: 100px; margin-right: auto; border-style: inset; border-width: 1px;">-->
-        <!-- ================ start footer Area ================= -->
-       <?php include ('layouts/footer/footer.php');?>     
-
-    <!-- ================ End footer Area ================= -->
-    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
-    <script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/main.js"></script>
-</body>
-<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
-<script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="vendors/nice-select/jquery.nice-select.min.js"></script>
-<script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/main.js"></script>
-</body>
+        <!-- ================  Footer Area start================= -->
+        <?php include ('layouts/footer/footer.php'); ?>
+        <!-- ================ End footer Area ================= -->
+        
+        <!-- JS -->
+        <?php include 'layouts/js/js.php'; ?>
+    </body>
 </html>

@@ -4,6 +4,7 @@
 <footer class="">
     <div>
         <center>
+            <hr>
             <h3>BUNS Restaurant</h3> 
             <p> since 2009 </p>
             <p>Address: 19 Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội, Việt Nam </p> 

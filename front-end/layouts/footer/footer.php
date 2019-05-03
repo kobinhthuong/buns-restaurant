@@ -1,10 +1,7 @@
-<!-- ================ Start footer Area ================= -->
-
-<!--<footer class="text-align-center padding-top-20">-->
 <footer class="">
     <div>
         <center>
-            <hr>
+            <hr style="align-content: center; border-width: 2px; width: 50%;">
             <h3>BUNS Restaurant</h3> 
             <p> since 2009 </p>
             <p>Address: 19 Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội, Việt Nam </p> 
@@ -20,5 +17,3 @@
         </br>
     </div>
 </footer>
-
-<!-- ================ End footer Area ================= -->

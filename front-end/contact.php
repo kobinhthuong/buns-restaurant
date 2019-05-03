@@ -5,7 +5,7 @@
     <body>
         <!--================ Header Menu Area start =================-->
         <?php include 'layouts/header/header.php'; ?>
-        <!--================Header Menu Area =================-->
+        <!--================Header Menu Area end =================-->
 
         <!-- ================ Contact Section Start ================= -->
         <section class="section-margin">

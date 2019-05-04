@@ -4,9 +4,9 @@ $sql = "select * from posts order by id desc";
 $run = mysqli_query($conn, $sql);
 ?>
 <html>
-    <!--header-->
+<!--    header-->
     <?php include ('../layouts/header/header.php'); ?>
-    <!-- Navigation -->
+<!--     Navigation -->
     <?php include ('../layouts/sidebar/navbar.php'); ?>
     <body> 
         <div id="page-wrapper">

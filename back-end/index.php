@@ -49,7 +49,7 @@
 
                 <!--Posts Management-->
                 <li>
-                    <a href="managePosts/posts.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
+                    <a href="managePosts/main.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
                 </li>
                 <!--Images Management-->
             </ul>

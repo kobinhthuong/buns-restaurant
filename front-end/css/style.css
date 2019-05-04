@@ -2713,7 +2713,7 @@ button.button {
 	border-radius: 5px
 }
 
-.footer-area {
+/*.footer-area {
 	padding: 120px 0px 120px;
 	background: #fff8f7
 }
@@ -2880,10 +2880,10 @@ button.button {
 	text-align: center;
 	height: 32px;
 	align-content: center;
-/*	-webkit-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s*/
+	transition: all 0.3s ease 0s
 }
 
 .footer-area .footer-bottom .footer-social a:hover {
@@ -2894,4 +2894,4 @@ button.button {
 .footer-area .footer-bottom .footer-social a i,
 .footer-area .footer-bottom .footer-social a span {
 	font-size: 14px
-}
+}*/

@@ -1,5 +1,4 @@
 <?php
-include ('../layouts/header/header.php');
 include '../config.php';
 $sql = "select * from dishes order by id desc" or die();
 $run = mysqli_query($conn, $sql);

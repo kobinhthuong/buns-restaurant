@@ -15,5 +15,6 @@
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart"></i></a>
         </center>
         </br>
+        </br>
     </div>
 </footer>

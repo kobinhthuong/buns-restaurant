@@ -1,18 +1,13 @@
-
-<!--header-->
-
- 
 <?php
 include ('../layouts/header/header.php');
 include '../config.php';
-$sql ="select * from dishes order by id desc" or die ();
+$sql = "select * from dishes order by id desc" or die();
 $run = mysqli_query($conn, $sql);
-
 ?>
 
-<!--<!DOCTYPE HTML>-->
+<!DOCTYPE HTML>
 <html>
-    <?php include ('../layouts/header/header.php');?> 
+    <?php include ('../layouts/header/header.php'); ?> 
     <body>   
         <!-- Navigation -->
         <?php include ('../layouts/sidebar/navbar.php'); ?> 
@@ -23,13 +18,13 @@ $run = mysqli_query($conn, $sql);
                     <h3>Dishes Table</h3>
                     <div class="page-header">
                         <div class="page-name">
-                            <ol class="text-right">
+                            <ol class="text-left">
                                 <a href="add.php" target="_blank">Add Dish</a> </br>
-
                             </ol>
                         </div>
                     </div>
                 </div>
+
                 <div class="bs-example4" data-example-id="contextual-table">
                     <table class="table">
                         <thead>
@@ -47,7 +42,7 @@ $run = mysqli_query($conn, $sql);
                                     <td><?php echo $close['id'] ?></td>
                                     <td><?php echo $close['name'] ?></td>
                                     <td><?php echo $close['discription'] ?></td>
-                                    <td><img src="back-end/manageDishes/uploads/<?php echo $close['photo'] ?>" width="60px" height="60px"></td>
+                                    <td><img src="../../<?php echo $close['photo']; ?>" width="60px" height="60px"></td>
                                     <td align="center"><a href ="index.php?manage=manageDishes&ac=edit&id=<?php echo $close['id'] ?>" >Edit</a></td>
                                     <td align="center"><a href="back-end/manageDishes/handling.php&id=<?php echo $close['id'] ?>">Delete</a></td>
                                 </tr>
@@ -111,7 +106,7 @@ $run = mysqli_query($conn, $sql);
             <!-- /#page-wrapper -->
         </div>
         <!--                footer-->
-                    
+
         <!-- /#wrapper -->
         <!-- Nav CSS -->
         <link href="css/custom.css" rel="stylesheet">

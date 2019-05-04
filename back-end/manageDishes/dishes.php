@@ -12,6 +12,11 @@ $run = mysqli_query($conn, $sql);
         <!-- Navigation -->
         <?php include ('../layouts/sidebar/navbar.php'); ?> 
 
+    <!--header-->
+    <?php include ('../layouts/header/header.php'); ?> 
+    <!-- Navigation -->
+    <?php include ('../layouts/sidebar/navbar.php'); ?>
+    <body>
         <div id="page-wrapper">
             <div class="col-md-12 graphs">
                 <div class="xs">
@@ -19,7 +24,11 @@ $run = mysqli_query($conn, $sql);
                     <div class="page-header">
                         <div class="page-name">
                             <ol class="text-left">
+
                                 <a href="add.php" target="_blank">Add Dish</a> </br>
+
+                                <a href="add.php"><button class="button1">Add new dishes</button></a>                                
+
                             </ol>
                         </div>
                     </div>
@@ -51,7 +60,6 @@ $run = mysqli_query($conn, $sql);
                             ?>
                         </thead>
                     </table>
-
 <!--                        <tbody>
                             <tr class="active">
                                 <th scope="row">1</th>
@@ -102,12 +110,15 @@ $run = mysqli_query($conn, $sql);
                     </table>-->
                 </div>
             </div>
+            <!--footer-->
             <?php include ('../layouts/footer/footer.php'); ?>
-            <!-- /#page-wrapper -->
         </div>
+<<<<<<< HEAD
         <!--                footer-->
 
         <!-- /#wrapper -->
+=======
+>>>>>>> b50475ed3477986a19c2211d370cadf80235e5f0
         <!-- Nav CSS -->
         <link href="css/custom.css" rel="stylesheet">
         <!-- Metis Menu Plugin JavaScript -->

@@ -1,8 +1,31 @@
+
 <?php
 include '../config.php';
 include '../../upload.php';
+?>
+//<a href="../../uploads/">aaa</a>
+<form action="back-end/manageDishes/handling.php" method="post" enctype="multipart/form-data">
+    <table width="100%" border="1">
+        <html>        
+            <head>
+                <meta charset="UTF-8"
+            <td colspan="2" ><div style="color:blue;font-size:20px" align="center">Add Dish</div><br><br> </td>
+            <form action="" method="post" enctype="multipart/form-data" >
+                <table width="990px" >
+                    <tr>
+                        <td width="150px" >Name : </td>
+                        <td width="840px">
+                            <input style="width:400px;margin-top:3px;margin-bottom:3px;" name="name" value="" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Photo : </td>
+                        <td>
+                            <input type="file" name="photo" >
+                        </td>
+                    </tr>
 
-if (isset($_POST['button'])) {
+<?php if (isset($_POST['button'])) {
     $dish_name = $_POST['dish_name'];
     $dish_des = $_POST['dish_des'];
     $photo_name = $_FILES['photo']['name'];

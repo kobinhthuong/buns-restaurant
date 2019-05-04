@@ -4,10 +4,11 @@ $sql = "select * from posts order by id desc";
 $run = mysqli_query($conn, $sql);
 ?>
 <html>
-    <body>   
-        <!-- Navigation -->
-        <?php include ('../layouts/sidebar/navbar.php'); ?>
-        <?php include ('../layouts/header/header.php'); ?>
+    <!--header-->
+    <?php include ('../layouts/header/header.php'); ?>
+    <!-- Navigation -->
+    <?php include ('../layouts/sidebar/navbar.php'); ?>
+    <body> 
         <div id="page-wrapper">
             <div class="col-md-12 graphs">
                 <div class="xs">
@@ -42,8 +43,8 @@ $run = mysqli_query($conn, $sql);
                                         <td><?php echo $dong['id'] ?></td>
                                         <td><?php echo $dong['category_id'] ?></td>
                                         <td><?php echo $dong['title'] ?></td>
-                                        <!--<td><?php // echo $dong['summary']   ?></td>-->
-                                        <!--<td><?php // echo $dong['content']   ?></td>-->
+                                        <!--<td><?php // echo $dong['summary']      ?></td>-->
+                                        <!--<td><?php // echo $dong['content']      ?></td>-->
                                         <td><img src="back-end/managePosts/uploads/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
                                         <td><?php echo $dong['is_shown'] ?></td>
                                         <td align="center"><a href ="index.php?quanli=managePosts&ac=edit&id=<?php echo $dong['id'] ?>" >Edit</a></td>
@@ -55,7 +56,7 @@ $run = mysqli_query($conn, $sql);
                             </tbody>
                         </table>
                     </div>
-                    <!--                footer-->
+                    <!--footer-->
                     <?php include ('../layouts/footer/footer.php'); ?> 
                 </div>
             </div>
@@ -89,8 +90,8 @@ $run = mysqli_query($conn, $sql);
             <td>//<?php echo $dong['id'] ?></td>
             <td>//<?php echo $dong['category_id'] ?></td>
             <td>//<?php echo $dong['title'] ?></td>
-            <td>//<?php // echo $dong['summary']   ?></td>
-            <td>//<?php // echo $dong['content']   ?></td>
+            <td>//<?php // echo $dong['summary']      ?></td>
+            <td>//<?php // echo $dong['content']      ?></td>
             <td><img src="back-end/managePosts/uploads///<?php echo $dong['hinhanh'] ?>" width="60px" height="60px"></td>
             <td>//<?php echo $dong['is_shown'] ?></td>
             <td><a href ="index.php?quanli=managePosts&ac=edit&id=//<?php echo $dong['id'] ?>" >Edit</a></td>

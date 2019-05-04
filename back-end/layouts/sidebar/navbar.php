@@ -43,23 +43,16 @@
         <ul class="nav" id="side-menu">
             <!--dashboard--> 
             <li>
-                <a href="index.php"><i class="fa fa-dashboard fa-fw nav_icon"></i>Dashboard</a>
+                <a href="../index.php"><i class="fa fa-dashboard nav_icon"></i>Dashboard</a>
             </li>
-
             <!--Dishes-->
             <li>
-                <a href="manageDishes/dishes.php"><i class="fa fa-cutlery nav_icon"></i>Dishes</a>
+                <a href="../manageDishes/dishes.php"><i class="fa fa-cutlery nav_icon"></i>Dishes</a>
             </li>
-
             <!--Posts Management-->
             <li>
-                <a href="managePosts/posts.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
+                <a href="../managePosts/main.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
             </li>
-            <!--Images Management-->
-            <li>
-                <a href="manageImages/images.php"><i class="fa fa-picture-o nav_icon"></i>Images</a>
-            </li>
-
         </ul>
     </div>
     <!-- /.sidebar-collapse -->

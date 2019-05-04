@@ -16,7 +16,7 @@
 </div>
 <div class="right">
     <?php
-    include('back-end/managePosts/viewall.php');
+    include('viewall.php');
     ?>
 </div>
 

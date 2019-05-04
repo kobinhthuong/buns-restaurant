@@ -1,26 +1,25 @@
- 
 <?php
 include ('../layouts/header/header.php');
-$sql ="select * from dishes order by id desc" or die ();
+include '../config.php';
+$sql = "select * from dishes order by id desc" or die();
 $run = mysqli_query($conn, $sql);
-
 ?>
 
 <!--<!DOCTYPE HTML>-->
 <html>
-    <body>   
-        <!-- Navigation -->
-        <?php include ('../layouts/sidebar/navbar.php'); ?> 
-
+    <!--header-->
+    <?php include ('../layouts/header/header.php'); ?> 
+    <!-- Navigation -->
+    <?php include ('../layouts/sidebar/navbar.php'); ?>
+    <body> 
         <div id="page-wrapper">
             <div class="col-md-12 graphs">
                 <div class="xs">
                     <h3>Dishes Table</h3>
                     <div class="page-header">
                         <div class="page-name">
-                            <ol class="text-right">
-                                <a href="add.php" target="_blank">Add Dish</a> </br>
-
+                            <ol class="text-left">
+                                <a href="add.php"><button class="button1">Add new dishes</button></a>                                
                             </ol>
                         </div>
                     </div>
@@ -31,29 +30,27 @@ $run = mysqli_query($conn, $sql);
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
-                                <th>Updated at</th>
-                                <th>Action</th>
+                                <th>Description</th>
+                                <th>Image</th>
+                                <th colspan="2"><div align="center">Action</div></th>
                             </tr>
                             <?php
-                            $id = 0;
                             while ($close = mysqli_fetch_array($run)) {
                                 ?>
                                 <tr>
-                                    <td><?php echo $i ?></td>
+                                    <td><?php echo $close['id'] ?></td>
                                     <td><?php echo $close['name'] ?></td>
-                                    <td><?php echo $close['description'] ?></td>
+                                    <td><?php echo $close['discription'] ?></td>
                                     <td><img src="back-end/manageDishes/uploads/<?php echo $close['photo'] ?>" width="60px" height="60px"></td>
-                                    <td><?php echo $close['is_shown'] ?></td>
-                                    <td><a href ="index.php?manage=manageDishes&ac=edit&id=<?php echo $close['id'] ?>" >Edit</a></td>
-                                    <td><a href="back-end/manageDishes/handling.php&id=<?php echo $close['id'] ?>">Delete</a></td>
+                                    <td align="center"><a href ="index.php?manage=manageDishes&ac=edit&id=<?php echo $close['id'] ?>" >Edit</a></td>
+                                    <td align="center"><a href="back-end/manageDishes/handling.php&id=<?php echo $close['id'] ?>">Delete</a></td>
                                 </tr>
                                 <?php
-                                $i++;
                             }
                             ?>
                         </thead>
-
-                        <tbody>
+                    </table>
+<!--                        <tbody>
                             <tr class="active">
                                 <th scope="row">1</th>
                                 <td>Cream</td>
@@ -100,17 +97,12 @@ $run = mysqli_query($conn, $sql);
                                 </td>
                             </tr>
                         </tbody>
-                    </table>
-
-
-
-                    <!--                footer-->
-                    <?php include ('../layouts/footer/footer.php'); ?> 
+                    </table>-->
                 </div>
             </div>
-            <!-- /#page-wrapper -->
+            <!--footer-->
+            <?php include ('../layouts/footer/footer.php'); ?>
         </div>
-        <!-- /#wrapper -->
         <!-- Nav CSS -->
         <link href="css/custom.css" rel="stylesheet">
         <!-- Metis Menu Plugin JavaScript -->

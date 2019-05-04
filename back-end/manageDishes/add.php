@@ -1,3 +1,4 @@
+<a href="../../uploads/">aaa</a>
 <form action="back-end/manageDishes/handling.php" method="post" enctype="multipart/form-data">
     <table width="100%" border="1">
         <html>        

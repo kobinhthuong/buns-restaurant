@@ -1,5 +1,7 @@
 <?php
-$sql="select * from posts where id ='$_GET[id]'";
+$id = $_GET['id'];
+//$sql="select * from posts where id ='$_GET[id]'";
+$sql="select * from posts where id = $id";
 $run = mysqli_query($conn, $sql);
 $dong = mysqli_fetch_array($run);
 ?>

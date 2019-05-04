@@ -4,10 +4,6 @@
             <td colspan="2"><div align="center">Add Post</div></td>
         </tr>
         <tr>
-            <td>Category_id</td>
-            <td><input type="text" name="category_id"></td>
-        </tr>
-        <tr>
             <td>Title</td>
             <td><input type="text" name="title"></td>
         </tr>

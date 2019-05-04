@@ -12,12 +12,19 @@ $run = mysqli_query($conn, $sql);
             <div class="col-md-12 graphs">
                 <div class="xs">
                     <h3>Dishes Table</h3>
+                    <div class="page-header">
+                        <div class="page-name">
+                            <ol class="text-right">
+                                <a href="add.php" target="_blank">Add Dish</a> </br>
+
+                            </ol>
+                        </div>
+                    </div>
                     <div class="bs-example4" data-example-id="contextual-table">
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Category</th>
                                     <th>Title</th>
                                     <th>Image</th>
                                     <th>Shown</th>
@@ -35,16 +42,15 @@ $run = mysqli_query($conn, $sql);
                                     </td>
                                 </tr>-->
                                 <?php
-                                while ($dong = mysqli_fetch_array($run)) {
-                                    ?>
+                                    while ($dong = mysqli_fetch_array($run)) {
+                                 ?>
                                     <tr class="active">
                                         <!--<th scope="row">1</th>-->
                                         <td><?php echo $dong['id'] ?></td>
-                                        <td><?php echo $dong['category_id'] ?></td>
                                         <td><?php echo $dong['title'] ?></td>
                                         <!--<td><?php // echo $dong['summary']   ?></td>-->
                                         <!--<td><?php // echo $dong['content']   ?></td>-->
-                                        <td><img src="back-end/managePosts/uploads/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
+                                        <td><img src="uploads/posts/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
                                         <td><?php echo $dong['is_shown'] ?></td>
                                         <td align="center"><a href ="index.php?quanli=managePosts&ac=edit&id=<?php echo $dong['id'] ?>" >Edit</a></td>
                                         <td align="center"><a href="back-end/managePosts/handling.php&id=<?php echo $dong['id'] ?>">Delete</a></td>

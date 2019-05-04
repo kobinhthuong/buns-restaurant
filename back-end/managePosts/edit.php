@@ -1,7 +1,5 @@
 <?php
-$id = $_GET['id'];
-//$sql="select * from posts where id ='$_GET[id]'";
-$sql="select * from posts where id = $id";
+$sql="select * from posts where id ='$_GET[id]'";
 $run = mysqli_query($conn, $sql);
 $dong = mysqli_fetch_array($run);
 ?>
@@ -9,10 +7,6 @@ $dong = mysqli_fetch_array($run);
     <table width="100%" border="1">
         <tr>
             <td colspan="2"><div align="center">Edit Post</div></td>
-        </tr>
-        <tr>
-            <td>Category_id</td>
-            <td><input type="text" name="category_id" value="<?php echo $dong['category_id'] ?>"></td>
         </tr>
         <tr>
             <td>Title</td>
@@ -28,7 +22,7 @@ $dong = mysqli_fetch_array($run);
         </tr>
         <tr>
             <td>Photo</td>
-            <td><input type="file" name="photo"><img src="back-end/managePosts/uploads/<?php echo $dong['photo']?>" width="60px" height="60px"/></td>
+            <td><input type="file" name="photo"><img src="uploads/posts/<?php echo $dong['photo']?>" width="60px" height="60px"/></td>
         </tr>
         <tr>
             <td>Is_shown</td>

@@ -49,19 +49,16 @@ $run = mysqli_query($con, $sql);
                                         <!--<th scope="row">1</th>-->
                                         <td><?php echo $dong['id'] ?></td>
                                         <td><?php echo $dong['title'] ?></td>
-<<<<<<< HEAD
                                         <td><?php echo $dong['summary']   ?></td>
                                         <td><img src="uploads/posts/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
                                         <td align="center"><a href ="edit.php?id=<?php echo $dong['id']?>" target="_blank" >Edit</a></td>
                                         <td align="center"><a href="edit.php?id=<?php echo $dong['id']?>" target="_blank">Delete</a></td>
-=======
                                         <!--<td><?php // echo $dong['summary']      ?></td>-->
                                         <!--<td><?php // echo $dong['content']      ?></td>-->
                                         <td><img src="back-end/managePosts/uploads/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
                                         <td><?php echo $dong['is_shown'] ?></td>
                                         <td align="center"><a href ="index.php?quanli=managePosts&ac=edit&id=<?php echo $dong['id'] ?>" >Edit</a></td>
                                         <td align="center"><a href="back-end/managePosts/handling.php&id=<?php echo $dong['id'] ?>">Delete</a></td>
->>>>>>> c2fb4f1b95b47fe92bb3d21ad2391960d5981cb5
                                     </tr>
                                     <?php
                                 }

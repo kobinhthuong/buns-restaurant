@@ -17,7 +17,7 @@ if (isset($_POST['button'])) {
     if (isset($dish_name, $dish_des, $photo_name)) {
 //        move_uploaded_file($photo_tmp, $photo_path);
         upload($photo_name, $photo_tmp, $photo_path);
-        $insert_dish = "INSERT INTO `dishes`(`name`, `photo`, `discription`) VALUES ('$dish_name','$photo_path','$dish_des')";
+        $insert_dish = "INSERT INTO `dishes`(`name`, `photo`, `description`) VALUES ('$dish_name','$photo_path','$dish_des')";
 //        die('stop');
         $query = mysqli_query($con, $insert_dish);
         echo "Sucess";
@@ -38,12 +38,6 @@ if (isset($_POST['button'])) {
             <div class="col-md-12 graphs">
                 <div class="xs">
                     <h3>Add new Dish</h3>
-                    <!--                                <form action="back-end/manageDishes/handling.php" method="post" enctype="multipart/form-data">
-                                                        <table width="100%" border="1">
-                                                            <html>        
-                                                                <head>
-                                                                    <meta charset="UTF-8"
-                                                                <td colspan="2" ><div style="color:blue;font-size:20px" align="center">Add Dish</div><br><br> </td>-->
                     <form action="" method="post" enctype="multipart/form-data" >
                         <div class="form-group">
                             <label>Dish name</label>

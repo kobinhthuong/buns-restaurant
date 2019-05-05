@@ -4,9 +4,9 @@ $sql = "select * from posts order by id desc";
 $run = mysqli_query($con, $sql);
 ?>
 <html>
-<!--    header-->
+<!--Header-->
     <?php include ('../layouts/header/header.php'); ?>
-<!--     Navigation -->
+<!--Navigation -->
     <?php include ('../layouts/sidebar/navbar.php'); ?>
     <body> 
         <div id="page-wrapper">
@@ -17,7 +17,6 @@ $run = mysqli_query($con, $sql);
                         <div class="page-name">
                             <ol class="text-left">
                                 <a href="add.php" target="_blank">Add Dish</a> </br>
-
                             </ol>
                         </div>
                     </div>

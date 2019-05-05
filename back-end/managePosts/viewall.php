@@ -1,7 +1,7 @@
 <?php
 include '../config.php';
 $sql = "select * from posts order by id desc";
-$run = mysqli_query($conn, $sql);
+$run = mysqli_query($con, $sql);
 ?>
 <html>
 <!--    header-->

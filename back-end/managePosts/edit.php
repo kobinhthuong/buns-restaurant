@@ -40,12 +40,12 @@ if(isset($_POST['edit'])){
    $content=$_POST['content'];
    $photo=$_POST['photo'];
     $sql="update posts set title='$title',summary='$summary',content='$content',photo='$photo' where id =$id ";
-    $run= mysqli_query($conn, $sql);
+    $run= mysqli_query($con, $sql);
     header('location:viewall.php');
 }
 else{
      $sql="delete from posts where id ='$id' ";
-    mysqli_query($conn, $sql);
+    mysqli_query($con, $sql);
     header('location:viewall.php');
 }
 ?>

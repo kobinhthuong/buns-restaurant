@@ -6,7 +6,7 @@ if(isset($_POST['add'])){
     $content=$_POST['content'];
     $photo=$_POST['photo'];
     $sql="INSERT INTO posts VALUES(NULL,'$title','$summary','$content','$photo')";
-    mysqli_query($conn, $sql);
+    mysqli_query($con, $sql);
     header('location:viewall.php');
 }
 ?>

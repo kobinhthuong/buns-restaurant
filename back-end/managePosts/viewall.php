@@ -26,8 +26,8 @@ $run = mysqli_query($conn, $sql);
                                 <tr>
                                     <th>ID</th>
                                     <th>Title</th>
-                                    <th>Image</th>
-                                    <th>Shown</th>
+                                    <th>Summary</th>
+                                    <th>Photo</th>
                                     <th colspan="2"><div align="center">Action</div></th>
                                 </tr>
                             </thead>
@@ -48,12 +48,10 @@ $run = mysqli_query($conn, $sql);
                                         <!--<th scope="row">1</th>-->
                                         <td><?php echo $dong['id'] ?></td>
                                         <td><?php echo $dong['title'] ?></td>
-                                        <!--<td><?php // echo $dong['summary']   ?></td>-->
-                                        <!--<td><?php // echo $dong['content']   ?></td>-->
+                                        <td><?php echo $dong['summary']   ?></td>
                                         <td><img src="uploads/posts/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
-                                        <td><?php echo $dong['is_shown'] ?></td>
-                                        <td align="center"><a href ="index.php?quanli=managePosts&ac=edit&id=<?php echo $dong['id'] ?>" >Edit</a></td>
-                                        <td align="center"><a href="back-end/managePosts/handling.php&id=<?php echo $dong['id'] ?>">Delete</a></td>
+                                        <td align="center"><a href ="edit.php?id=<?php echo $dong['id']?>" target="_blank" >Edit</a></td>
+                                        <td align="center"><a href="edit.php?id=<?php echo $dong['id']?>" target="_blank">Delete</a></td>
                                     </tr>
                                     <?php
                                 }

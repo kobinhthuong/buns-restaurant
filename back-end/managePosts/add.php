@@ -21,7 +21,7 @@ if(isset($_POST['add'])){
         </tr>
         <tr>
             <td>Summary</td>
-            <td><intput type="text" name="summary"></td>
+            <td><input type="text" name="summary"></td>
         </tr>
         <tr>
             <td>Content</td>

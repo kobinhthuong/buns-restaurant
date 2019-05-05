@@ -39,7 +39,7 @@
                 <!--about 2-->
                 <div class="row">
                             <div class="col-6">
-                                <img class="" src="img/home/about-img3.png" alt="" style="width:400px;height:400px;" >
+                                <img class="" src="img/home/about-img2.png" alt="" style="width:400px;height:400px;" >
                             </div>
 <!--                    <div class="col-md-6 pl-md-5 pl-xl-0 offset-xl-1 col-xl-5">-->
                         <div class="col-6 ">

@@ -29,7 +29,7 @@ function delete_dish(){
               <title><h3>Delete Dish</h3></title>
     </head>
     <body>
-        <form action="delete_dish.php" method="POST">
+        <form action="delete.php" method="POST">
             <h4>Please enter dish's name that you want to delete</h4>
             Dish name:
             <div>

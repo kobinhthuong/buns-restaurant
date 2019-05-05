@@ -1,35 +1,38 @@
-
-<!--header-->
-
- 
 <?php
-include ('../layouts/header/header.php');
 include '../config.php';
-$sql ="select * from dishes order by id desc" or die ();
+$sql = "select * from dishes order by id desc" or die();
 $run = mysqli_query($conn, $sql);
-
 ?>
 
-<!--<!DOCTYPE HTML>-->
+<!DOCTYPE HTML>
 <html>
-    <?php include ('../layouts/header/header.php');?> 
+    <?php include ('../layouts/header/header.php'); ?> 
     <body>   
         <!-- Navigation -->
         <?php include ('../layouts/sidebar/navbar.php'); ?> 
 
+    <!--header-->
+    <?php include ('../layouts/header/header.php'); ?> 
+    <!-- Navigation -->
+    <?php include ('../layouts/sidebar/navbar.php'); ?>
+    <body>
         <div id="page-wrapper">
             <div class="col-md-12 graphs">
                 <div class="xs">
                     <h3>Dishes Table</h3>
                     <div class="page-header">
                         <div class="page-name">
-                            <ol class="text-right">
+                            <ol class="text-left">
+
                                 <a href="add.php" target="_blank">Add Dish</a> </br>
+
+                                <a href="add.php"><button class="button1">Add new dishes</button></a>                                
 
                             </ol>
                         </div>
                     </div>
                 </div>
+
                 <div class="bs-example4" data-example-id="contextual-table">
                     <table class="table">
                         <thead>
@@ -47,7 +50,7 @@ $run = mysqli_query($conn, $sql);
                                     <td><?php echo $close['id'] ?></td>
                                     <td><?php echo $close['name'] ?></td>
                                     <td><?php echo $close['discription'] ?></td>
-                                    <td><img src="back-end/manageDishes/uploads/<?php echo $close['photo'] ?>" width="60px" height="60px"></td>
+                                    <td><img src="../../<?php echo $close['photo']; ?>" width="60px" height="60px"></td>
                                     <td align="center"><a href ="index.php?manage=manageDishes&ac=edit&id=<?php echo $close['id'] ?>" >Edit</a></td>
                                     <td align="center"><a href="back-end/manageDishes/handling.php&id=<?php echo $close['id'] ?>">Delete</a></td>
                                 </tr>
@@ -56,7 +59,6 @@ $run = mysqli_query($conn, $sql);
                             ?>
                         </thead>
                     </table>
-
 <!--                        <tbody>
                             <tr class="active">
                                 <th scope="row">1</th>
@@ -107,12 +109,15 @@ $run = mysqli_query($conn, $sql);
                     </table>-->
                 </div>
             </div>
+            <!--footer-->
             <?php include ('../layouts/footer/footer.php'); ?>
-            <!-- /#page-wrapper -->
         </div>
+<<<<<<< HEAD
         <!--                footer-->
-                    
+
         <!-- /#wrapper -->
+=======
+>>>>>>> b50475ed3477986a19c2211d370cadf80235e5f0
         <!-- Nav CSS -->
         <link href="css/custom.css" rel="stylesheet">
         <!-- Metis Menu Plugin JavaScript -->

@@ -46,6 +46,7 @@
                         <div class="section-intro mb-lg-4">
                             <h4 class="intro-title">VIP Customers</h4>
                             <h2>We organizes many famous people’s meetings</h2>
+                            <a href="about.php"></a>
                         </div>
                         <p>
                             With a strong desire for impression, when customers dine in the restaurant, professional staffs will serve in dedicated and thoughtful attitude. </br>

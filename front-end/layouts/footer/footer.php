@@ -12,8 +12,9 @@
     <div class="footer-bottom">
         <center>
 <!--            <p class="footer-text m-0 col-lg-8 col-md-12">-->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i></a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart"></i></a>
         </center>
+        </br>
         </br>
     </div>
 </footer>

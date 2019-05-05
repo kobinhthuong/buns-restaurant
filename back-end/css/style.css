@@ -15,13 +15,13 @@ html, body{
   	background:#000;
   	overflow-x: hidden;
 }
-body a{
+/*body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
-}
+}*/
 /*-- header --*/
 .navbar .navbar-nav li a {
   padding: 0 10px;
@@ -42,7 +42,7 @@ body a{
   color: #fff;
   height: 32px;
 }
-.navbar .navbar-nav li .dropdown-menu {
+/*.navbar .navbar-nav li .dropdown-menu {
   margin-top: 3px;
   border: none;
   -webkit-border-radius: 0px;
@@ -53,8 +53,8 @@ body a{
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.125);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.125);
   padding: 0;
-}
-.navbar .navbar-nav li .dropdown-menu:before {
+}*/
+/*.navbar .navbar-nav li .dropdown-menu:before {
   position: absolute;
   top: -9.5px;
   right: 16px;
@@ -63,13 +63,13 @@ body a{
   border-bottom: 8px solid #e1e6ef;
   border-left: 8px solid transparent;
   content: '';
-}
-.navbar .navbar-nav li .dropdown-menu li.dropdown-menu-header, .navbar .navbar-nav li .dropdown-menu li.dropdown-menu-footer {
+}*/
+/*.navbar .navbar-nav li .dropdown-menu li.dropdown-menu-header, .navbar .navbar-nav li .dropdown-menu li.dropdown-menu-footer {
   background:#f2f4f8;
 }
 .navbar .navbar-nav li.m_2 a {
   line-height:38px;
-}
+}*/
 /*.navbar .navbar-nav li .dropdown-menu li a i {
   margin: 0 10px 0 -5px;
   border: none;
@@ -82,15 +82,15 @@ body a{
   right: 10px;
   top: 11px;
 }*/
-.label.label-info {
+/*.label.label-info {
   background-color:#ef553a;
 }
 .label {
   padding: 4px 6px;
   border: none;
   text-shadow: none;
-}
-.warning_1, .warning_11{
+}*/
+/*.warning_1, .warning_11{
 	padding:10px 16px !important;
 }
 .warning_11, .warning_22, .warning_33, .warning_44{
@@ -109,13 +109,13 @@ body a{
 }
 .warning_4, .warning_44{
 	padding:1px 5px !important;
-}	
-.but_list, .tab-content{
+}	*/
+/*.but_list, .tab-content{
 	margin:1.5em 0 0 0;
 }
 .btn-group-lg>.btn, .btn-lg {
   border-radius:4px !important;
-}
+}*/
 .navbar .navbar-nav li .dropdown-toggle.avatar img {
   height: 40px;
   -webkit-border-radius: 50em;

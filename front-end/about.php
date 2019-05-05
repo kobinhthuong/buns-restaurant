@@ -1,25 +1,9 @@
 <?php ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>BUNS Restaurant - Home</title>
-        <link rel="icon" href="img/logo.png" type="image/png">
-        <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/Magnific-Popup/magnific-popup.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+    <?php include 'layouts/header/head.php'; ?>
+    <?php include 'layouts/header/header.php'; ?>
     <body>
-        <!--================ Header Menu Area start =================-->
-        <?php include 'layouts/header/header.php' ?>
-        <!--================ Header Menu Are =================-->
-
-        <!--================ About Section start =================-->
         <section class="about section-margin pb-xl-70">
             <div class="container">
                 <div class="row">
@@ -30,7 +14,7 @@
                             <!--            <div class="styleBox-border">-->
                             <div class="">
                                 <!--              <img class="styleBox-img1 img-fluid" src="img/home/about-img1.png" alt="">-->
-                                <img class="" src="img/home/about-img1.png" alt="">
+                                <img class="" src="img/home/about-img1.png" alt="" style="width:400px;height:400px;">
                             </div>
                         </div>
                     </div>
@@ -50,19 +34,18 @@
                 </div>
 
                 </br>
+                </br>
+                </br>
                 <!--about 2-->
                 <div class="row">
-                    <div class="">
-                        <div>
                             <div class="col-6">
-                                <img class="" src="img/home/about-img3.png" alt="" >
+                                <img class="" src="img/home/about-img3.png" alt="" style="width:400px;height:400px;" >
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 pl-md-5 pl-xl-0 offset-xl-1 col-xl-5">
+<!--                    <div class="col-md-6 pl-md-5 pl-xl-0 offset-xl-1 col-xl-5">-->
+                        <div class="col-6 ">
                         <div class="section-intro mb-lg-4">
                             <h4 class="intro-title">VIP Customers</h4>
-                            <h2>We organizes many famous people’s parties</h2>
+                            <h2>We organizes many famous people’s meetings</h2>
                         </div>
                         <p>
                             With a strong desire for impression, when customers dine in the restaurant, professional staffs will serve in dedicated and thoughtful attitude. </br>

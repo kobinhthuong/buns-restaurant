@@ -2,11 +2,8 @@
 <html lang="en">
     <!-- Head section -->
     <?php include 'layouts/header/head.php'; ?>
+    <?php include 'layouts/header/header.php'; ?>
     <body>
-        <!--================ Header Menu Area start =================-->
-        <?php include 'layouts/header/header.php'; ?>
-        <!--================Header Menu Area end =================-->
-
         <!-- ================ Contact Section Start ================= -->
         <section class="section-margin">
             <div class="container">
@@ -16,7 +13,7 @@
                             <h2 class="contact-title">Get in Touch</h2>
                         </div>
                         <div class="col-lg-8">
-                            <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                            <form class="form-contact contact_form" action="#" method="post" id="contactForm" novalidate="novalidate">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="form-group">
@@ -74,7 +71,7 @@
         <!-- ================ start footer Area ================= -->
         <?php include ('layouts/footer/footer.php'); ?>
         <!-- ================ End footer Area ================= -->
-        
+
         <!-- JS -->
         <?php include 'layouts/js/js.php'; ?>
     </body>

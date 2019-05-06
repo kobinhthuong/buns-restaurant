@@ -1,7 +1,7 @@
 <?php
 include("../config.php");
 $id = isset($_GET['id']) ? intval($_GET['id']) : "";
-$run = mysqli_query($conn, "SELECT * FROM posts WHERE id=$id");
+$run = mysqli_query($con, "SELECT * FROM posts WHERE id=$id");
 $dong = mysqli_fetch_array($run);
 ?>
 <form method="post" enctype="multipart/form-data">
@@ -43,8 +43,8 @@ if(isset($_POST['edit'])){
     $run= mysqli_query($con, $sql);
     header('location:viewall.php');
 }
-else{
-     $sql="delete from posts where id ='$id' ";
+else if (isset($_POST['delete'])){
+    $sql="delete from posts where id ='$id' ";
     mysqli_query($con, $sql);
     header('location:viewall.php');
 }

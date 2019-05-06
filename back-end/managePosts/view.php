@@ -17,7 +17,7 @@ $run = mysqli_query($con, $sql);
                     <div class="page-header">
                         <div class="page-name">
                             <ol class="">
-                                <a href="add.php"><button class="button1">Add News</button></a>
+                                <a href="add.php"><button class="button1">Add new posts</button></a>
                             </ol>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ $run = mysqli_query($con, $sql);
                                         <td><?php echo $dong['summary']   ?></td>
                                         <td><img src="../../<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
                                         <td align="center"><a href ="edit.php?id=<?php echo $dong['id']?>" target="_blank" <i class="fa  fa-pencil nav_icon fa-2x"></a></td>
-                                        <td align="center"><a href="delete.php?id=<?php echo $dong['id']?>" target="_blank" <i class="fa  fa-trash-o nav_icon fa-2x"></a></td>
+                                        <td align="center"><a href="delete.php?id=<?php echo $dong['id']?>" target="_blank" <i class="fa  fa-trash-o nav_icon fa-2x" onclick="return confirm('Are you sure you want to delete this dish?');"></a></td>
                                     </tr>
                                     <?php
                                 }

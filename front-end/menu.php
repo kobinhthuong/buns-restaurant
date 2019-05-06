@@ -5,7 +5,7 @@ if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
-$query_dish = mysqli_query($con, "SELECT `name`, `photo`, `discription` FROM `dishes`");
+$query_dish = mysqli_query($con, "SELECT `name`, `photo`, `description` FROM `dishes`");
 $dish_list = mysqli_fetch_all($query_dish);
 ?>
 <html>

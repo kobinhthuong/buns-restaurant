@@ -18,7 +18,7 @@ $run = mysqli_query($con, $sql);
                     <div class="page-header">
                         <div class="page-name">
                             <ol class="text-left">
-                               <a href="add.php"><button class="button1">Add new dishes</button></a>
+                                <a href="add.php"><button class="button1">Add new dishes</button></a>
                             </ol>
                         </div>
                     </div>
@@ -42,12 +42,11 @@ $run = mysqli_query($con, $sql);
                                     <td><?php echo $close['name'] ?></td>
                                     <td><?php echo $close['description'] ?></td>
                                     <td><img src="../../<?php echo $close['photo']; ?>" width="60px" height="60px"></td>
-                                    <td align="center"><a href ="edit.php?id=<?php echo $close['id']; ?>" <i class="fa  fa-pencil nav_icon fa-2x"></a></td>
-                                    <td align="center"><a href="delete.php?id=<?php echo $close['id']; ?>" <i class="fa fa-trash-o snav_icon fa-2x"></a></td>
-                                </tr>
-                                <?php
-                            }
-                            ?>
+                                    <td align="center"><a href ="edit.php?id=<?php echo $close['id']; ?>" <i class="fa  fa-pencil nav_icon fa-2x">edit</a></td>
+                                    <td align="center"><a href="delete.php?id=<?php echo $close['id']; ?>"<i class="fa  fa-pencil nav_icon fa-2x" onclick="return confirm('Are you sure you want to delete this dish?');">delete</a></td>                            </tr>
+                            <?php
+                        }
+                        ?>
                         </thead>
                     </table>
                 </div>
@@ -59,6 +58,6 @@ $run = mysqli_query($con, $sql);
         <!-- Metis Menu Plugin JavaScript -->
         <script src="js/metisMenu.min.js"></script>
         <script src="js/custom.js"></script>
-        
+
     </body>
 </html>

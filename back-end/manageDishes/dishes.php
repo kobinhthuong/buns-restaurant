@@ -18,11 +18,7 @@ $run = mysqli_query($con, $sql);
                     <div class="page-header">
                         <div class="page-name">
                             <ol class="text-left">
-                               <a href="add.php"><button class="button1">Add new dishes</button></a>                                
-
-
-                                <a href="add.php"><button class="button1">Add new dishes</button></a>
-
+                               <a href="add.php"><button class="button1">Add new dishes</button></a>
                             </ol>
                         </div>
                     </div>

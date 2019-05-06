@@ -10,9 +10,8 @@
                         <li class="nav-item"><a class="nav-link" href="about.php">About</a></li> 
                         <li class="nav-item"><a class="nav-link" href="menu.php">Menu</a></li>
                         <li class="nav-item"><a class="nav-link" href="view.php">View</a>
-                        <li class="nav-item"><a class="nav-link" href="discount.php">Discount</a>
-                        <li class="nav-item"><a class="nav-link" href="feedback.php">Feedback</a>                                
-                        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.php">News</a>
+                        <li class="nav-item"><a class="nav-link" href="feedback.php">Feedback</a>                     
                     </ul>
                 </div> 
             </div>

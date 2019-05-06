@@ -6,7 +6,7 @@ if(isset($_POST['add'])){
     $content=$_POST['content'];
     $photo=$_POST['photo'];
     $sql="INSERT INTO posts VALUES(NULL,'$title','$summary','$content','$photo')";
-    mysqli_query($conn, $sql);
+    mysqli_query($con, $sql);
     header('location:viewall.php');
 }
 ?>
@@ -21,7 +21,7 @@ if(isset($_POST['add'])){
         </tr>
         <tr>
             <td>Summary</td>
-            <td><intput type="text" name="summary"></td>
+            <td><input type="text" name="summary"></td>
         </tr>
         <tr>
             <td>Content</td>

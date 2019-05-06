@@ -3,21 +3,21 @@ include '../config.php';
 $sql = "select * from posts order by id desc";
 $run = mysqli_query($con, $sql);
 ?>
+
 <html>
-<!--    header-->
+<!--Header-->
     <?php include ('../layouts/header/header.php'); ?>
-<!--     Navigation -->
+<!--Navigation -->
     <?php include ('../layouts/sidebar/navbar.php'); ?>
     <body> 
         <div id="page-wrapper">
             <div class="col-md-12 graphs">
                 <div class="xs">
-                    <h3>Dishes Table</h3>
+                    <h3>Posts Table</h3>
                     <div class="page-header">
                         <div class="page-name">
-                            <ol class="text-right">
-                                <a href="add.php" target="_blank">Add Dish</a> </br>
-
+                            <ol class="">
+                                <a href="add.php"><button class="button1">Add News</button></a>
                             </ol>
                         </div>
                     </div>
@@ -41,10 +41,16 @@ $run = mysqli_query($con, $sql);
                                         <td><?php echo $dong['id'] ?></td>
                                         <td><?php echo $dong['title'] ?></td>
                                         <td><?php echo $dong['summary']   ?></td>
-                                        <td><img src="uploads/posts/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
+                                        <td><img src="../../<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
                                         <td align="center"><a href ="edit.php?id=<?php echo $dong['id']?>" target="_blank" >Edit</a></td>
+<<<<<<< HEAD:back-end/managePosts/viewall.php
                                         <td align="center"><a href="edit.php?id=<?php echo $dong['id']?>" target="_blank">Delete</a></td>
                   
+=======
+                                        <td align="center"><a href="delete.php?id=<?php echo $dong['id']?>" target="_blank">Delete</a></td>
+
+                                    </tr>
+>>>>>>> 97e4a14b3e1e17e9aac5af587ccf7f232e049b86:back-end/managePosts/view.php
                                     <?php
                                 }
                                 ?>
@@ -65,4 +71,39 @@ $run = mysqli_query($con, $sql);
         <script src="../js/custom.js"></script>
     </body>
 </html>
+<<<<<<< HEAD:back-end/managePosts/viewall.php
+=======
+<!--<table width="100%" border="1">
+    <tr>
+        <td>id</td>
+        <td>Category_id</td>
+        <td>Title</td>
+        <td>Summary</td>
+        <td>Content</td>
+        <td>Photo</td>
+        <td>Is_shown</td>
+        <td colspan="2"><div align="center">Action</div></td>
+    </tr>
+    //<?php
+////    $id=0; why do u set this id as 0?
+//    while ($dong = mysqli_fetch_array($run)) {
+//        
+?>
+        <tr>
+            <td>//<?php echo $dong['id'] ?></td>
+            <td>//<?php echo $dong['category_id'] ?></td>
+            <td>//<?php echo $dong['title'] ?></td>
+            <td>//<?php // echo $dong['summary']      ?></td>
+            <td>//<?php // echo $dong['content']      ?></td>
+            <td><img src="back-end/managePosts/uploads///<?php echo $dong['hinhanh'] ?>" width="60px" height="60px"></td>
+            <td>//<?php echo $dong['is_shown'] ?></td>
+            <td><a href ="index.php?quanli=managePosts&ac=edit&id=//<?php echo $dong['id'] ?>" >Edit</a></td>
+            <td><a href="back-end/managePosts/handling.php&id=//<?php echo $dong['id'] ?>">Delete</a></td>
+        </tr>
+        //<?php
+//    }
+//    
+?>
+</table>-->
+>>>>>>> 97e4a14b3e1e17e9aac5af587ccf7f232e049b86:back-end/managePosts/view.php
 

@@ -15,9 +15,6 @@
         <link href="css/font-awesome.css" rel="stylesheet"> 
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
-        <!----webfonts--->
-<!--        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
-        -//webfonts-  -->
         <!-- Nav CSS -->
         <link href="css/custom.css" rel="stylesheet">
         <!-- Metis Menu Plugin JavaScript -->
@@ -41,19 +38,20 @@
                 <li>
                     <a href="index.php"><i class="fa fa-dashboard nav_icon"></i>Dashboard</a>
                 </li>
-
                 <!--Dishes-->
                 <li>
-                    <a href="manageDishes/dishes.php"><i class="fa fa-cutlery nav_icon"></i>Dishes</a>
+                    <a href="manageDishes/view.php"><i class="fa fa-cutlery nav_icon"></i>Dishes</a>
                 </li>
-
                 <!--Posts Management-->
                 <li>
+<<<<<<< HEAD
 
                     <a href="managePosts/viewall.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
 
+=======
+                    <a href="managePosts/view.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
+>>>>>>> 97e4a14b3e1e17e9aac5af587ccf7f232e049b86
                 </li>
-                <!--Images Management-->
             </ul>
         </div>
         <!-- /.sidebar-collapse -->

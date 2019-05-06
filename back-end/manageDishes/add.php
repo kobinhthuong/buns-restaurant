@@ -14,14 +14,14 @@ if (isset($_POST['button'])) {
     $photo_path = "uploads/dishes/" . $photo_name;
 //    $photo_path = SITE_ROOT . "uploads/dishes/" .$photo_name;
 
-    if (isset($dish_name, $dish_des, $photo_name)) {
+    if (isset($dish_name, $dish_des, $photo_path)) {
 //        move_uploaded_file($photo_tmp, $photo_path);
-        upload($photo_name, $photo_tmp, $photo_path);
-        $insert_dish = "INSERT INTO `dishes`(`name`, `photo`, `discription`) VALUES ('$dish_name','$photo_path','$dish_des')";
+        upload($photo_tmp, $photo_path);
+        $insert_dish = "INSERT INTO `dishes`(`name`, `photo`, `description`) VALUES ('$dish_name','$photo_path','$dish_des')";
 //        die('stop');
         $query = mysqli_query($con, $insert_dish);
         echo "Sucess";
-//        header("Location: dishes.php");
+        header("Location: view.php");
     } else {
         
     }
@@ -33,31 +33,25 @@ if (isset($_POST['button'])) {
     <?php include ('../layouts/header/header.php'); ?> 
     <!-- Navigation -->
     <?php include ('../layouts/sidebar/navbar.php'); ?>
-    <body> 
+    <body>
         <div id="page-wrapper">
             <div class="col-md-12 graphs">
                 <div class="xs">
                     <h3>Add new Dish</h3>
-                    <!--                                <form action="back-end/manageDishes/handling.php" method="post" enctype="multipart/form-data">
-                                                        <table width="100%" border="1">
-                                                            <html>        
-                                                                <head>
-                                                                    <meta charset="UTF-8"
-                                                                <td colspan="2" ><div style="color:blue;font-size:20px" align="center">Add Dish</div><br><br> </td>-->
                     <form action="" method="post" enctype="multipart/form-data" >
                         <div class="form-group">
-                            <label>Dish name</label>
-                            <input type="text" class="form-control" name="dish_name">
+                            <input placeholder="Dish name" type="text" class="form-control" name="dish_name" >
                         </div>
-                        <div class="form-group">
-                            <label>Dish description</label>
-                            <input type="text" class="form-control" name="dish_des">
+                            <div class="form-group">
+                            <input  placeholder="Dish description" type="text" class="form-control" name="dish_des" >
+                            </div>
+                            <div class="form-group">
+                            <input placeholder="Photo" type="file" class="form-control" name="photo">
+                            </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary" name="button">Add</button>
                         </div>
-                        <div class="form-group">
-                            <label>Photo</label>
-                            <input type="file" class="form-control" name="photo">
-                        </div>
-                        <button type="submit" class="btn btn-primary" name="button">Add</button>
+
                     </form>
                 </div>
             </div>

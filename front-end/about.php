@@ -39,13 +39,14 @@
                 <!--about 2-->
                 <div class="row">
                             <div class="col-6">
-                                <img class="" src="img/home/about-img3.png" alt="" style="width:400px;height:400px;" >
+                                <img class="" src="img/home/about-img2.png" alt="" style="width:400px;height:400px;" >
                             </div>
 <!--                    <div class="col-md-6 pl-md-5 pl-xl-0 offset-xl-1 col-xl-5">-->
                         <div class="col-6 ">
                         <div class="section-intro mb-lg-4">
                             <h4 class="intro-title">VIP Customers</h4>
                             <h2>We organizes many famous people’s meetings</h2>
+                            <a href="about.php"></a>
                         </div>
                         <p>
                             With a strong desire for impression, when customers dine in the restaurant, professional staffs will serve in dedicated and thoughtful attitude. </br>

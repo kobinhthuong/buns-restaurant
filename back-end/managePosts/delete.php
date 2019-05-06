@@ -3,30 +3,15 @@ include("../config.php");
 include '../../upload.php';
 
 $id = isset($_GET['id']) ? intval($_GET['id']) : "";
-$query = mysqli_query($con, "SELECT * FROM dishes WHERE id = $id");
+$query = mysqli_query($con, "SELECT * FROM posts WHERE id = $id");
 $result = mysqli_fetch_array($query);
-$dish_photo = $result['photo'];
+$post_photo = $result['photo'];
 
-delete($dish_photo);
+delete($post_photo);
 
-$delete = mysqli_query($con, "DELETE FROM dishes WHERE id = $id");
+$delete = mysqli_query($con, "DELETE FROM posts WHERE id = $id");
 header("Location: view.php")
 
-//function delete_dish(){
-//    global $db;
-//    $dish_name = $_POST['name'];
-//    $get_dish = mysqli_query($db, "SELECT id from dishes WHERE name = '$dish_name'");
-//    $dish_id_result = mysqli_fetch_all($get_dish);
-//    $dish_id = $dish_id_result['dish_id'];
-//    $link_photo="../photo/dishes/".$a_2['photo'];
-//    if(is_file($link_photo)) 
-//    {
-//        unlink($link_photo);
-//    }
-//    mysqli_query($db, "DELETE FROM dishs WHERE dish_id = '$dish_id';");
-//    echo "Delete dish successfully!";
-//    
-//}
 ?>
 
 <html>

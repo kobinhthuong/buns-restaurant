@@ -3,6 +3,7 @@ include '../config.php';
 $sql = "select * from posts order by id desc";
 $run = mysqli_query($con, $sql);
 ?>
+
 <html>
 <!--Header-->
     <?php include ('../layouts/header/header.php'); ?>
@@ -49,9 +50,9 @@ $run = mysqli_query($con, $sql);
                                         <td><?php echo $dong['id'] ?></td>
                                         <td><?php echo $dong['title'] ?></td>
                                         <td><?php echo $dong['summary']   ?></td>
-                                        <td><img src="uploads/posts/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
+                                        <td><img src="../../<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
                                         <td align="center"><a href ="edit.php?id=<?php echo $dong['id']?>" target="_blank" >Edit</a></td>
-                                        <td align="center"><a href="edit.php?id=<?php echo $dong['id']?>" target="_blank">Delete</a></td>
+                                        <td align="center"><a href="delete.php?id=<?php echo $dong['id']?>" target="_blank">Delete</a></td>
 
                                     </tr>
                                     <?php

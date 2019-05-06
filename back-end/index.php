@@ -40,109 +40,80 @@ $result_post = mysqli_fetch_all($query_post);
     <!-- Navigation --> 
     <nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <a class="navbar-brand" href="index.php">BUNs Admin Panel</a>
-    <div class="navbar-default sidebar" role="navigation">
-        <div class="sidebar-nav navbar-collapse">
-            <ul class="nav" id="side-menu">
-                <!--dashboard--> 
-                <li>
-                    <a href="index.php"><i class="fa fa-dashboard nav_icon"></i>Dashboard</a>
-                </li>
-                <!--Dishes-->
-                <li>
-                    <a href="manageDishes/view.php"><i class="fa fa-cutlery nav_icon" ></i>Manage Dishes</a>
-                </li>
-                <!--Posts Management-->
-                <li>
-                    <a href="managePosts/view.php"><i class="fa fa-laptop nav_icon"></i>Manage Posts</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.sidebar-collapse -->
-    </div>
-    <!-- /.navbar-static-side -->
-</nav>
-    
-     <!-- End Navigation --> 
-
-<!--body-->
-<body>
-    <div id="wrapper">
-        <div id="page-wrapper">
-            <div class="graphs">
-                <div class="col_6">
-                    <div class="col-md-6 span_8">
-                        <div class="activity_box">
-                            <div class="scrollbar" id="style-2">
-                                <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
-                                        <h5>Discount</h5>
-                                        <p>Students Only</p>
-                                        <h6>8:03</h6>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                                <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
-                                        <h5>Grand Opening</h5>
-                                        <p>Discount 50% for loyal members </p>
-                                        <h6>10:03</h6>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                                <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
-                                        <h5>Grand Opening</h5>
-                                        <p>Discount 50% for loyal members </p>
-                                        <h6>10:03</h6>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>                               
-                                                                                         
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 span_8">
-                        <div class="activity_box">
-                            <div class="scrollbar" id="style-2">
-                                <?php for ($i = 0; $i < 2; $i++) {?>
-                                <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
-                                        <h5><?php echo $result_post[$i][1];?> </h5>
-                                        <p>Students Only</p>
-                                        <h6>8:03</h6>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                                <?php } ?>
-                                <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
-                                        <h5>Grand Opening</h5>
-                                        <p>Discount 50% for loyal members </p>
-                                        <h6>10:03</h6>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                                <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
-                                        <h5>Grand Opening</h5>
-                                        <p>Discount 50% for loyal members </p>
-                                        <h6>10:03</h6>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>                               
-                                                                                         
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="clearfix"> </div>
-                </div>
-            </div>            
-            <!--end body-->
-            <!--footer-->
-            <div class="">
-                <p align="center">Copyright &copy; 2019 Buns. All Rights Reserved | Design by Supermen </p>
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <!--dashboard--> 
+                    <li>
+                        <a href="index.php"><i class="fa fa-dashboard nav_icon"></i>Dashboard</a>
+                    </li>
+                    <!--Dishes-->
+                    <li>
+                        <a href="manageDishes/view.php"><i class="fa fa-cutlery nav_icon" ></i>Manage Dishes</a>
+                    </li>
+                    <!--Posts Management-->
+                    <li>
+                        <a href="managePosts/view.php"><i class="fa fa-laptop nav_icon"></i>Manage Posts</a>
+                    </li>
+                </ul>
             </div>
-
+            <!-- /.sidebar-collapse -->
         </div>
-    </div>
-    <!-- /#page-wrapper -->
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-</body>
+        <!-- /.navbar-static-side -->
+    </nav>
+
+    <!-- End Navigation --> 
+
+    <!--body-->
+    <body>
+        <div id="wrapper">
+            <div id="page-wrapper">
+                <div class="graphs">
+                    <div class="col_6">
+                        <div class="col-md-6 span_8">
+                            <div class="activity_box">
+                                <h3 style="padding-top: 10px;">New dishes</h3>
+                                <div class="scrollbar" id="style-2">
+                                    <?php for ($i = 0; $i < 4; $i++) { ?>
+                                        <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
+                                                <h5><a href="manageDishes/edit.php?id=<?php echo $result_dish[$i][0]; ?>"><?php echo $result_dish[$i][1]; ?></a></h5>
+                                                <p><?php echo $result_dish[$i][3]; ?></p>
+                                            </div>
+                                            <div class="clearfix"> </div>
+                                        </div>
+                                    <?php } ?>                                        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 span_8">
+                            <div class="activity_box">
+                                <h3 style="padding-top: 10px;">New posts</h3>
+                                <div class="scrollbar" id="style-2">
+                                    <?php for ($i = 0; $i < 4; $i++) { ?>
+                                        <div class="activity-row">
+                                            <div class="col-xs-8 activity-desc">
+                                                <h5><a href="managePosts/edit.php?id=<?php echo $result_post[$i][0]; ?>"><?php echo $result_post[$i][1]; ?></a></h5>
+                                                <p><?php echo $result_post[$i][2]; ?></p>
+                                            </div>
+                                            <div class="clearfix"> </div>
+                                        </div>
+                                    <?php } ?>                                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>            
+                <!--end body-->
+                <!--footer-->
+                <div class="">
+                    <p align="center">Copyright &copy; 2019 Buns. All Rights Reserved | Design by Supermen </p>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>

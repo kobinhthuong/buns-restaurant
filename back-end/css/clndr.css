@@ -1,15 +1,15 @@
-.cal1{
+/*.cal1{
    background: #fff;
    margin-bottom: 1em;
    min-height: 392px;
 }
 .noselect {
   -webkit-user-select: none;
-  /* Chrome/Safari */
+   Chrome/Safari 
   -moz-user-select: none;
-  /* Firefox */
+   Firefox 
   -ms-user-select: none;
-  /* IE10+ */
+   IE10+ 
 }
 .cal1 .clndr .clndr-controls {
     position: relative;
@@ -34,11 +34,11 @@
   background: url(../images/arrow-right.png) no-repeat 0px;
   cursor: pointer;
   -webkit-user-select: none;
-  /* Chrome/Safari */
+   Chrome/Safari 
   -moz-user-select: none;
-  /* Firefox */
+   Firefox 
   -ms-user-select: none;
-  /* IE10+ */
+   IE10+ 
 }
 .cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive:hover {
   cursor: default;
@@ -53,11 +53,11 @@
   background: url(../images/arrow-left.png) no-repeat 0px;
   cursor: pointer;
   -webkit-user-select: none;
-  /* Chrome/Safari */
+   Chrome/Safari 
   -moz-user-select: none;
-  /* Firefox */
+   Firefox 
   -ms-user-select: none;
-  /* IE10+ */
+   IE10+ 
 }
 .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive:hover {
    cursor: default;
@@ -189,4 +189,4 @@
 	.cal1 .clndr .clndr-table tr .day.today:after{
 		left:15px;
 	}
-}
+}*/

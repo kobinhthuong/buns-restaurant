@@ -40,18 +40,18 @@ if (isset($_POST['button'])) {
                     <h3>Add new Dish</h3>
                     <form action="" method="post" enctype="multipart/form-data" >
                         <div class="form-group">
-                            <label>Dish name</label>
-                            <input type="text" class="form-control" name="dish_name">
+                            <input placeholder="Dish name" type="text" class="form-control" name="dish_name" >
                         </div>
-                        <div class="form-group">
-                            <label>Dish description</label>
-                            <input type="text" class="form-control" name="dish_des">
+                            <div class="form-group">
+                            <input  placeholder="Dish description" type="text" class="form-control" name="dish_des" >
+                            </div>
+                            <div class="form-group">
+                            <input placeholder="Photo" type="file" class="form-control" name="photo">
+                            </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary" name="button">Add</button>
                         </div>
-                        <div class="form-group">
-                            <label>Photo</label>
-                            <input type="file" class="form-control" name="photo">
-                        </div>
-                        <button type="submit" class="btn btn-primary" name="button">Add</button>
+
                     </form>
                 </div>
             </div>

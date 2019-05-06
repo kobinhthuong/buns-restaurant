@@ -12,11 +12,11 @@ $run = mysqli_query($con, $sql);
         <div id="page-wrapper">
             <div class="col-md-12 graphs">
                 <div class="xs">
-                    <h3>Dishes Table</h3>
+                    <h3>Posts Table</h3>
                     <div class="page-header">
                         <div class="page-name">
-                            <ol class="text-left">
-                                <a href="add.php" target="_blank">Add Dish</a> </br>
+                            <ol class="">
+                                <a href="add.php"><button class="button1">Add News</button></a>
                             </ol>
                         </div>
                     </div>

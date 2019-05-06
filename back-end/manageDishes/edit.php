@@ -1,12 +1,12 @@
 
 <?php
+include("../config.php");
 $sql = "select * from dishes where id ='$_GET[id]'";
 $run = mysqli_query($conn, $sql);
 $close = mysqli_fetch_array($run);
 ?>
-
-<form action="back-end/manageDishes/manage.php?id=<?php echo $close['id'] ?>" method="post" enctype="multipart/form-data">
-    <table width="100%" border="1">
+<form method="post" enctype="multipart/form-data">
+    <table width="100%" border="1"> 
         <tr>
             <td colspan="2" ><div style="color:blue;font-size:20px" align="center">Edit Dish</div><br><br> </td>
         </tr>
@@ -26,22 +26,6 @@ $close = mysqli_fetch_array($run);
         <tr>
             <td valign="top" >Description : </td>
             <td>
-                <script type="text/javascript">
-                    tinymce.init({
-                        selector: '#description',
-                        theme: 'modern',
-                        width: 800,
-                        height: 400,
-                        plugins: [
-                            'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
-                            'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
-                            'save table contextmenu directionality emoticons template paste textcolor jbimages'
-                        ],
-                        toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons jbimages',
-                        relative_urls: false
-                    });
-
-                </script>
                 <textarea id="description" name="description" ><?php echo $close['description'] ?></textarea>
             </td>
         </tr>        

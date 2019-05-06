@@ -1,7 +1,7 @@
 <?php
 include '../config.php';
 $sql = "select * from dishes order by id desc" or die();
-$run = mysqli_query($conn, $sql);
+$run = mysqli_query($con, $sql);
 ?>
 
 <!DOCTYPE HTML>
@@ -23,9 +23,6 @@ $run = mysqli_query($conn, $sql);
                     <div class="page-header">
                         <div class="page-name">
                             <ol class="text-left">
-
-                                <a href="add.php" target="_blank">Add Dish</a> </br>
-
                                 <a href="add.php"><button class="button1">Add new dishes</button></a>                                
 
                             </ol>
@@ -52,7 +49,7 @@ $run = mysqli_query($conn, $sql);
                                     <td><?php echo $close['discription'] ?></td>
                                     <td><img src="../../<?php echo $close['photo']; ?>" width="60px" height="60px"></td>
                                     <td align="center"><a href ="index.php?manage=manageDishes&ac=edit&id=<?php echo $close['id'] ?>" >Edit</a></td>
-                                    <td align="center"><a href="back-end/manageDishes/handling.php&id=<?php echo $close['id'] ?>">Delete</a></td>
+                                    <td align="center"><a href="back-end/manageDishes/add.php&id=<?php echo $close['id'] ?>">Delete</a></td>
                                 </tr>
                                 <?php
                             }

@@ -1,15 +1,5 @@
 <?php
 include('../config.php');
-
-if(isset($_POST['add'])){
-    $title=$_POST['title'];
-    $summary=$_POST['summary'];
-    $content=$_POST['content'];
-    $photo=$_POST['photo'];
-    $sql="INSERT INTO posts VALUES(NULL,'$title','$summary','$content','$photo')";
-    mysqli_query($con, $sql);
-    header('location:view.php');
-
 include '../../upload.php';
 
 $sql = "select * from dishes order by id desc" or die();
@@ -23,7 +13,7 @@ if (isset($_POST['add'])) {
     $photo_tmp = $_FILES['photo']['tmp_name'];
 //    define('SITE_ROOT', __DIR__);
     $photo_path = "uploads/posts/" . $photo_name;
-    
+
     if (isset($title, $summary, $content, $photo_path)) {
 //        die("stop");
 //        move_uploaded_file($photo_tmp, $photo_path);
@@ -38,30 +28,6 @@ if (isset($_POST['add'])) {
 }
 ?>
 
-<form method="post" enctype="multipart/form-data">
-    <table width="100%" border="1">
-        <tr>
-            <td colspan="2"><div align="center">Add Post</div></td>
-        </tr>
-        <tr>
-            <td>Title</td>
-            <td><input type="text" name="title"></td>
-        </tr>
-        <tr>
-            <td>Summary</td>
-            <td><input type="text" name="summary"></td>
-        </tr>
-        <tr>
-            <td>Content</td>
-            <td><textarea name="content"cols="40" rows="15"></textarea></td>
-        </tr>
-        <tr>
-            <td>Photo</td>
-            <td><input type="file" name="photo"></td>
-        </tr>
-        <tr>
-        <td colspan="2"> <div align="center"> 
-                <button name ="add" value="add">add</button>
 <!DOCTYPE HTML>
 <html>
     <!--header-->
@@ -92,8 +58,8 @@ if (isset($_POST['add'])) {
                         <button type="submit" class="btn btn-primary" name="add">Add</button>
                     </form>
                 </div>
+                <?php include ('../layouts/footer/footer.php'); ?>
             </div>
-            <?php include ('../layouts/footer/footer.php'); ?>
         </div>
     </body>
 </html>

@@ -242,7 +242,7 @@ i.nav_icon {
     margin-right:6px;
 }
 .sidebar ul li a{
-    color: #999;
+/*    color: #fff;*/
     font-size:14px;
 }
 /*.form-control {
@@ -2699,7 +2699,6 @@ ul.new li.new_right{
 
   .form-control {
       background: none ;
-      border: 2px solid #cc0000;
       border-radius: 20px ;
       box-shadow: #CDCDCD;
     }

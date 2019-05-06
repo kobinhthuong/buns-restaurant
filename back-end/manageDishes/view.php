@@ -42,8 +42,8 @@ $run = mysqli_query($con, $sql);
                                     <td><?php echo $close['name'] ?></td>
                                     <td><?php echo $close['description'] ?></td>
                                     <td><img src="../../<?php echo $close['photo']; ?>" width="60px" height="60px"></td>
-                                    <td align="center"><a href ="edit.php?id=<?php echo $close['id']; ?>">Edit</a></td>
-                                    <td align="center"><a href="delete.php?id=<?php echo $close['id']; ?>">Delete</a></td>
+                                    <td align="center"><a href ="edit.php?id=<?php echo $close['id']; ?>" <i class="fa  fa-pencil nav_icon fa-2x"></a></td>
+                                    <td align="center"><a href="delete.php?id=<?php echo $close['id']; ?>" <i class="fa fa-trash-o snav_icon fa-2x"></a></td>
                                 </tr>
                                 <?php
                             }

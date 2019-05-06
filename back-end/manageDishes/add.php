@@ -48,6 +48,8 @@ if (isset($_POST['button'])) {
                             <input placeholder="Photo" type="file" class="form-control" name="photo">
                             </div>
                         <div>
+                            
+                            
                             <button type="submit" class="btn btn-primary" name="button">Add</button>
                         </div>
 

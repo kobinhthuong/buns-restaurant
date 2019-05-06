@@ -7,9 +7,10 @@ if(isset($_POST['add'])){
     $photo=$_POST['photo'];
     $sql="INSERT INTO posts VALUES(NULL,'$title','$summary','$content','$photo')";
     mysqli_query($con, $sql);
-    header('location:viewall.php');
+    header('location:view.php');
 }
 ?>
+
 <form method="post" enctype="multipart/form-data">
     <table width="100%" border="1">
         <tr>

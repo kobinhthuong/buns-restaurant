@@ -32,7 +32,7 @@ $dish_list = mysqli_fetch_all($query_dish);
                         ?>
                         <div class="col-lg-6">
                             <div class="media align-items-center food-card">
-                                <img class="mr-3 mr-sm-4" src="<?php echo $dish_image; ?>" alt="">
+                                <img class="mr-3 mr-sm-4" src="../<?php echo $dish_image; ?>" alt="">
                                 <div class="media-body">
                                     <div class="d-flex justify-content-between food-card-title">
                                         <h4><?php echo $dish_name; ?></h4>

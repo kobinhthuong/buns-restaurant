@@ -27,7 +27,7 @@ if (isset($_POST['add'])) {
     }
 }
 ?>
-<form method="post" enctype="multipart/form-data">
+<!--<form method="post" enctype="multipart/form-data">
     <table width="100%" border="1">
         <tr>
             <td colspan="2"><div align="center">Add Post</div></td>
@@ -50,7 +50,7 @@ if (isset($_POST['add'])) {
         </tr>
         <tr>
         <td colspan="2"> <div align="center"> 
-                <button name ="add" value="add">add</button>
+                <button name ="add" value="add">add</button>-->
 <!DOCTYPE HTML>
 <html>
     <!--header-->

@@ -14,14 +14,14 @@ if (isset($_POST['button'])) {
     $photo_path = "uploads/dishes/" . $photo_name;
 //    $photo_path = SITE_ROOT . "uploads/dishes/" .$photo_name;
 
-    if (isset($dish_name, $dish_des, $photo_name)) {
+    if (isset($dish_name, $dish_des, $photo_path)) {
 //        move_uploaded_file($photo_tmp, $photo_path);
-        upload($photo_name, $photo_tmp, $photo_path);
+        upload($photo_tmp, $photo_path);
         $insert_dish = "INSERT INTO `dishes`(`name`, `photo`, `description`) VALUES ('$dish_name','$photo_path','$dish_des')";
 //        die('stop');
         $query = mysqli_query($con, $insert_dish);
         echo "Sucess";
-//        header("Location: dishes.php");
+        header("Location: view.php");
     } else {
         
     }
@@ -33,7 +33,7 @@ if (isset($_POST['button'])) {
     <?php include ('../layouts/header/header.php'); ?> 
     <!-- Navigation -->
     <?php include ('../layouts/sidebar/navbar.php'); ?>
-    <body> 
+    <body>
         <div id="page-wrapper">
             <div class="col-md-12 graphs">
                 <div class="xs">

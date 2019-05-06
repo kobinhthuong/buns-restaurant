@@ -57,7 +57,7 @@ if (isset($_POST['edit'])) {
 //        die('stop');
         $query = mysqli_query($con, $update_dish);
         echo "Sucess";
-        header("Location: dishes.php");
+        header("Location: view.php");
     }
 }
 ?>

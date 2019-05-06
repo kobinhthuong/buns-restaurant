@@ -43,11 +43,11 @@
                 </li>
                 <!--Dishes-->
                 <li>
-                    <a href="manageDishes/dishes.php"><i class="fa fa-cutlery nav_icon"></i>Dishes</a>
+                    <a href="manageDishes/view.php"><i class="fa fa-cutlery nav_icon"></i>Dishes</a>
                 </li>
                 <!--Posts Management-->
                 <li>
-                    <a href="managePosts/viewall.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
+                    <a href="managePosts/view.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
                 </li>
                 <!--Images Management-->
             </ul>

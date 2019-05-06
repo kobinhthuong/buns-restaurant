@@ -3,7 +3,7 @@ include '../config.php';
 include '../../upload.php';
 
 $sql = "select * from dishes order by id desc" or die();
-$run = mysqli_query($conn, $sql);
+$run = mysqli_query($con, $sql);
 
 if (isset($_POST['button'])) {
     $dish_name = $_POST['dish_name'];

@@ -58,8 +58,8 @@
     <div id="wrapper">
         <div id="page-wrapper">
             <div class="graphs">
-                <div class="col_3">
-                    <div class="col-md-3 widget widget1">
+<!--                <div class="col_3">
+                    <div class="col-3 widget ">
                         <div class="r3_counter_box">
                             <i class="pull-left fa fa-laptop
                                icon-rounded"></i>
@@ -69,24 +69,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 widget widget1">
-                        <div class="r3_counter_box">
-                            <i class="pull-left fa fa-users  icon-rounded"></i>
-                            <div class="stats">
-                                <h5><strong>1019</strong></h5>
-                                <span>New Visitors</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 widget widget1">
-                        <div class="r3_counter_box">
-                            <i class="pull-left fa fa-picture-o  icon-rounded"></i>
-                            <div class="stats">
-                                <h5><strong>5</strong></h5>
-                                <span>New Images</span>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="col-md-3 widget">
                         <div class="r3_counter_box">
                             <i class="pull-left fa fa-cutlery  icon-rounded"></i>
@@ -97,10 +80,9 @@
                         </div>
                     </div>
                     <div class="clearfix"> </div>
-                </div>
-                <div class="col_1">
-
-                    <div class="col-md-4 span_8">
+                </div>-->
+                <div class="col_6">
+                    <div class="col-md-6 span_8">
                         <div class="activity_box">
                             <div class="scrollbar" id="style-2">
                                 <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
@@ -123,28 +105,41 @@
                                         <h6>10:03</h6>
                                     </div>
                                     <div class="clearfix"> </div>
-                                </div>
-                                
-                                                                                           
+                                </div>                               
+                                                                                         
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 stats-info">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">New Dishes</h4>
-                        </div>
-                        <div class="panel-body">
-                            <ul class="list-unstyled">
-                                <li>Roasted Marrow<div class="text-success pull-right">12<i ></i></div></li>
-                                <li>Roasted Marrow<div class="text-success pull-right">15<i ></i></div></li>
-                                <li>Roasted Marrow<div class="text-success pull-right">18<i ></i></div></li>
-                                <li>Roasted Marrow<div class="text-danger pull-right">17<i ></i></div></li>
-                                <li>Roasted Marrow<div class="text-success pull-right">18<i ></i></div></li>
-                                <li>Roasted Marrow<div class="text-danger pull-right">17<i ></i></div></li>
-                                
-                            </ul>
+                    
+                    <div class="col-md-6 span_8">
+                        <div class="activity_box">
+                            <div class="scrollbar" id="style-2">
+                                <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
+                                        <h5>Discount</h5>
+                                        <p>Students Only</p>
+                                        <h6>8:03</h6>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
+                                        <h5>Grand Opening</h5>
+                                        <p>Discount 50% for loyal members </p>
+                                        <h6>10:03</h6>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
+                                        <h5>Grand Opening</h5>
+                                        <p>Discount 50% for loyal members </p>
+                                        <h6>10:03</h6>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>                               
+                                                                                         
+                            </div>
                         </div>
                     </div>
+                    
                     <div class="clearfix"> </div>
                 </div>
             </div>            

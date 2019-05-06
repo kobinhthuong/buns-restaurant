@@ -4,6 +4,21 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : "";
 $run = mysqli_query($con, "SELECT * FROM posts WHERE id=$id");
 $dong = mysqli_fetch_array($run);
 ?>
+<?php
+if(isset($_POST['edit'])){
+    $title=$_POST['title'];
+   $summary=$_POST['summary'];
+   $content=$_POST['content'];
+   $photo=$_POST['photo'];
+    $sql="update posts set title='$title',summary='$summary',content='$content',photo='$photo' where id =$id ";
+    $run= mysqli_query($con, $sql);
+    header('location:viewall.php');
+}elseif(isset($_POST['delete'])){
+    $sql="delete from posts where id =$id ";
+    mysqli_query($con, $sql);
+    header('location:viewall.php');
+}
+?>
 <form method="post" enctype="multipart/form-data">
     <table width="100%" border="1">
         <tr>
@@ -15,7 +30,7 @@ $dong = mysqli_fetch_array($run);
         </tr>
         <tr>
             <td>Summary</td>
-            <td><intput type="text" name="summary" value="<?php echo $dong['summary']?>"></td>
+            <td><input type="text" name="summary" value="<?php echo $dong['summary']?>"></td>
         </tr>
         <tr>
             <td>Content</td>
@@ -33,6 +48,7 @@ $dong = mysqli_fetch_array($run);
     </tr>
     </table>
 </form>    
+
 <?php
 if(isset($_POST['edit'])){
     $title=$_POST['title'];

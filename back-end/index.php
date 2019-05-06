@@ -49,11 +49,9 @@
 
                 <!--Posts Management-->
                 <li>
-<<<<<<< HEAD
+
                     <a href="managePosts/viewall.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
-=======
-                    <a href="managePosts/main.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
->>>>>>> c2fb4f1b95b47fe92bb3d21ad2391960d5981cb5
+
                 </li>
                 <!--Images Management-->
             </ul>

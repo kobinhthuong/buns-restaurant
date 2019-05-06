@@ -33,15 +33,6 @@ $run = mysqli_query($con, $sql);
                                 </tr>
                             </thead>
                             <tbody>
-<!--                                <tr class="active">
-                                    <th scope="row">1</th>
-                                    <td>Column content</td>
-                                    <td>Column content</td>
-                                    <td>
-                                        <a href="edit.php" target="_blank">Edit</a> </br>
-                                        <a href="delete.php" target="_blank">Delete</a>
-                                    </td>
-                                </tr>-->
                                 <?php
                                     while ($dong = mysqli_fetch_array($run)) {
                                  ?>
@@ -49,20 +40,11 @@ $run = mysqli_query($con, $sql);
                                         <!--<th scope="row">1</th>-->
                                         <td><?php echo $dong['id'] ?></td>
                                         <td><?php echo $dong['title'] ?></td>
-<<<<<<< HEAD
                                         <td><?php echo $dong['summary']   ?></td>
                                         <td><img src="uploads/posts/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
                                         <td align="center"><a href ="edit.php?id=<?php echo $dong['id']?>" target="_blank" >Edit</a></td>
                                         <td align="center"><a href="edit.php?id=<?php echo $dong['id']?>" target="_blank">Delete</a></td>
-=======
-                                        <!--<td><?php // echo $dong['summary']      ?></td>-->
-                                        <!--<td><?php // echo $dong['content']      ?></td>-->
-                                        <td><img src="back-end/managePosts/uploads/<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
-                                        <td><?php echo $dong['is_shown'] ?></td>
-                                        <td align="center"><a href ="index.php?quanli=managePosts&ac=edit&id=<?php echo $dong['id'] ?>" >Edit</a></td>
-                                        <td align="center"><a href="back-end/managePosts/handling.php&id=<?php echo $dong['id'] ?>">Delete</a></td>
->>>>>>> c2fb4f1b95b47fe92bb3d21ad2391960d5981cb5
-                                    </tr>
+                  
                                     <?php
                                 }
                                 ?>
@@ -83,35 +65,4 @@ $run = mysqli_query($con, $sql);
         <script src="../js/custom.js"></script>
     </body>
 </html>
-<!--<table width="100%" border="1">
-    <tr>
-        <td>id</td>
-        <td>Category_id</td>
-        <td>Title</td>
-        <td>Summary</td>
-        <td>Content</td>
-        <td>Photo</td>
-        <td>Is_shown</td>
-        <td colspan="2"><div align="center">Action</div></td>
-    </tr>
-    //<?php
-////    $id=0; why do u set this id as 0?
-//    while ($dong = mysqli_fetch_array($run)) {
-//        
-?>
-        <tr>
-            <td>//<?php echo $dong['id'] ?></td>
-            <td>//<?php echo $dong['category_id'] ?></td>
-            <td>//<?php echo $dong['title'] ?></td>
-            <td>//<?php // echo $dong['summary']      ?></td>
-            <td>//<?php // echo $dong['content']      ?></td>
-            <td><img src="back-end/managePosts/uploads///<?php echo $dong['hinhanh'] ?>" width="60px" height="60px"></td>
-            <td>//<?php echo $dong['is_shown'] ?></td>
-            <td><a href ="index.php?quanli=managePosts&ac=edit&id=//<?php echo $dong['id'] ?>" >Edit</a></td>
-            <td><a href="back-end/managePosts/handling.php&id=//<?php echo $dong['id'] ?>">Delete</a></td>
-        </tr>
-        //<?php
-//    }
-//    
-?>
-</table>-->
+

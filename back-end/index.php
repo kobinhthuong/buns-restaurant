@@ -58,29 +58,6 @@
     <div id="wrapper">
         <div id="page-wrapper">
             <div class="graphs">
-<!--                <div class="col_3">
-                    <div class="col-3 widget ">
-                        <div class="r3_counter_box">
-                            <i class="pull-left fa fa-laptop
-                               icon-rounded"></i>
-                            <div class="stats">
-                                <h5><strong>2</strong></h5>
-                                <span>New Posts</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 widget">
-                        <div class="r3_counter_box">
-                            <i class="pull-left fa fa-cutlery  icon-rounded"></i>
-                            <div class="stats">
-                                <h5><strong>12</strong></h5>
-                                <span>New dishes</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>-->
                 <div class="col_6">
                     <div class="col-md-6 span_8">
                         <div class="activity_box">
@@ -152,8 +129,6 @@
         </div>
     </div>
     <!-- /#page-wrapper -->
-</div>
-<!-- /#wrapper -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 </body>

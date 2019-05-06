@@ -44,6 +44,7 @@ $run = mysqli_query($con, $sql);
                                         <td><img src="../../<?php echo $dong['photo'] ?>" width="60px" height="60px"></td>
                                         <td align="center"><a href ="edit.php?id=<?php echo $dong['id']?>" target="_blank" <i class="fa  fa-pencil nav_icon fa-2x"></a></td>
                                         <td align="center"><a href="delete.php?id=<?php echo $dong['id']?>" target="_blank" <i class="fa  fa-trash-o nav_icon fa-2x"></a></td>
+                                    </tr>
                                     <?php
                                 }
                                 ?>
@@ -64,4 +65,3 @@ $run = mysqli_query($con, $sql);
         <script src="../js/custom.js"></script>
     </body>
 </html>
-

@@ -45,6 +45,8 @@ $run = mysqli_query($con, $sql);
                                         <td align="center"><a href ="edit.php?id=<?php echo $dong['id']?>" target="_blank" >Edit</a></td>
                                         <td align="center"><a href="edit.php?id=<?php echo $dong['id']?>" target="_blank">Delete</a></td>
                                         <td align="center"><a href="delete.php?id=<?php echo $dong['id']?>" target="_blank">Delete</a></td>
+                                        <td align="center"><a href ="edit.php?id=<?php echo $dong['id']?>" target="_blank" <i class="fa  fa-pencil nav_icon fa-2x"></a></td>
+                                        <td align="center"><a href="delete.php?id=<?php echo $dong['id']?>" target="_blank" <i class="fa  fa-trash-o nav_icon fa-2x"></a></td>
                                     </tr>
                                     <?php
                                 }
@@ -66,36 +68,3 @@ $run = mysqli_query($con, $sql);
         <script src="../js/custom.js"></script>
     </body>
 </html>
-<!--<table width="100%" border="1">
-    <tr>
-        <td>id</td>
-        <td>Category_id</td>
-        <td>Title</td>
-        <td>Summary</td>
-        <td>Content</td>
-        <td>Photo</td>
-        <td>Is_shown</td>
-        <td colspan="2"><div align="center">Action</div></td>
-    </tr>
-    //<?php
-////    $id=0; why do u set this id as 0?
-//    while ($dong = mysqli_fetch_array($run)) {
-//        
-?>
-        <tr>
-            <td>//<?php echo $dong['id'] ?></td>
-            <td>//<?php echo $dong['category_id'] ?></td>
-            <td>//<?php echo $dong['title'] ?></td>
-            <td>//<?php // echo $dong['summary']      ?></td>
-            <td>//<?php // echo $dong['content']      ?></td>
-            <td><img src="back-end/managePosts/uploads///<?php echo $dong['hinhanh'] ?>" width="60px" height="60px"></td>
-            <td>//<?php echo $dong['is_shown'] ?></td>
-            <td><a href ="index.php?quanli=managePosts&ac=edit&id=//<?php echo $dong['id'] ?>" >Edit</a></td>
-            <td><a href="back-end/managePosts/handling.php&id=//<?php echo $dong['id'] ?>">Delete</a></td>
-        </tr>
-        //<?php
-//    }
-//    
-?>
-</table>-->
-

@@ -23,14 +23,12 @@
         <!-- Graph JavaScript -->
         <script src="js/d3.v3.js"></script>
         <script src="js/rickshaw.js"></script>
-    </head>
-    
+    </head>    
     <!--end head-->
 
     <!-- Navigation --> 
     <nav class="top1 navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
         <a class="navbar-brand" href="index.php">BUNs Admin Panel</a>
-    </div>
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
             <ul class="nav" id="side-menu">
@@ -40,12 +38,18 @@
                 </li>
                 <!--Dishes-->
                 <li>
-                    <a href="manageDishes/view.php"><i class="fa fa-cutlery nav_icon"></i>Dishes</a>
+                    <a href="manageDishes/view.php"><i class="fa fa-cutlery nav_icon" ></i>Manage Dishes</a>
                 </li>
                 <!--Posts Management-->
                 <li>
+<<<<<<< HEAD
                     <a href="managePosts/viewall.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
                     <a href="managePosts/view.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
+=======
+
+                    <a href="managePosts/view.php"><i class="fa fa-laptop nav_icon"></i>Manage Posts</a>
+
+>>>>>>> 34cec93ee7c2078753541655a262e0d5c1000ac1
                 </li>
             </ul>
         </div>
@@ -167,8 +171,7 @@
                     </div>
                     <div class="clearfix"> </div>
                 </div>
-            </div>
-            
+            </div>            
             <!--end body-->
             <!--footer-->
             <div class="">

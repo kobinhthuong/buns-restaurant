@@ -22,11 +22,10 @@ if (isset($_POST['button'])) {
         $query = mysqli_query($con, $insert_dish);
         echo "Sucess";
         header("Location: view.php");
-    } else {
-        
     }
 }
 ?>
+
 <!DOCTYPE HTML>
 <html>
     <!--header-->

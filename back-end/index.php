@@ -42,14 +42,9 @@
                 </li>
                 <!--Posts Management-->
                 <li>
-<<<<<<< HEAD
                     <a href="managePosts/viewall.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
                     <a href="managePosts/view.php"><i class="fa fa-laptop nav_icon"></i>Posts</a>
-=======
-
                     <a href="managePosts/view.php"><i class="fa fa-laptop nav_icon"></i>Manage Posts</a>
-
->>>>>>> 34cec93ee7c2078753541655a262e0d5c1000ac1
                 </li>
             </ul>
         </div>

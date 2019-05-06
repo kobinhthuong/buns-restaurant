@@ -5,25 +5,23 @@ include("../../upload.php");
 $id = isset($_GET['id']) ? intval($_GET['id']) : "";
 $query = mysqli_query($con, "SELECT * FROM dishes WHERE id = $id");
 $result = mysqli_fetch_array($query);
+$error = array();
 
 if (isset($_POST['button'])) {
     $dish_name = $_POST['dish_name'];
     $dish_des = $_POST['dish_des'];
     $photo_name = $_FILES['photo']['name'];
     $photo_tmp = $_FILES['photo']['tmp_name'];
-//    define('SITE_ROOT', __DIR__);
     $photo_path = "uploads/dishes/" . $photo_name;
-//    $photo_path = SITE_ROOT . "uploads/dishes/" .$photo_name;
 
-    if (isset($dish_name, $dish_des, $photo_path)) {
-//        move_uploaded_file($photo_tmp, $photo_path);
+    if (!empty($dish_name) && !empty($dish_des) && !empty($photo_path)) {
         upload($photo_tmp, $photo_path);
         
         $update_dish = "UPDATE dishes SET `name` = '$dish_name', `photo` = '$photo_path', `description` = '$dish_des' WHERE id = $id";
-//        die('stop');
         $query = mysqli_query($con, $update_dish);
-        echo "Sucess";
         header("Location: view.php");
+    } else {
+        array_push($error, "Dish name, dish description and photo must be filled!");
     }
 }
 ?>
@@ -39,6 +37,7 @@ if (isset($_POST['button'])) {
             <div class="col-md-12 graphs">
                 <div class="xs">
                     <h3>Edit dish</h3>
+                    <h5 style="color: red; te"><?php if (count($error) != 0) { echo $error[0]; }?></h5>
                     <div class="page-header">
                         <div class="page-name">
                             <ol class="text-left">

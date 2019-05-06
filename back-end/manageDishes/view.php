@@ -18,7 +18,7 @@ $run = mysqli_query($con, $sql);
                     <div class="page-header">
                         <div class="page-name">
                             <ol class="text-left">
-                               <a href="add.php"><button class="button1">Add new dishes</button></a>
+                                <a href="add.php"><button class="button1">Add new dishes</button></a>
                             </ol>
                         </div>
                     </div>
@@ -48,6 +48,7 @@ $run = mysqli_query($con, $sql);
                                 <?php
                             }
                             ?>
+
                         </thead>
                     </table>
                 </div>
@@ -59,6 +60,6 @@ $run = mysqli_query($con, $sql);
         <!-- Metis Menu Plugin JavaScript -->
         <script src="js/metisMenu.min.js"></script>
         <script src="js/custom.js"></script>
-        
+
     </body>
 </html>

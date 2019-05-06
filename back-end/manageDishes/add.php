@@ -52,7 +52,6 @@ if (isset($_POST['button'])) {
                             
                             <button type="submit" class="btn btn-primary" name="button">Add</button>
                         </div>
-
                     </form>
                 </div>
             </div>

@@ -1,3 +1,14 @@
+<?php
+include 'config.php';
+
+$query_dish = mysqli_query($con, "SELECT * FROM dishes order by id desc");
+$result_dish = mysqli_fetch_all($query_dish);
+
+$query_post = mysqli_query($con, "SELECT * FROM posts order by id desc");
+$result_post = mysqli_fetch_all($query_post);
+
+//echo $result_post[0][1];
+?>
 <!DOCTYPE HTML>
 <html>
     <!-- header-->
@@ -91,13 +102,15 @@
                     <div class="col-md-6 span_8">
                         <div class="activity_box">
                             <div class="scrollbar" id="style-2">
+                                <?php for ($i = 0; $i < 2; $i++) {?>
                                 <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
-                                        <h5>Discount</h5>
+                                        <h5><?php echo $result_post[$i][1];?> </h5>
                                         <p>Students Only</p>
                                         <h6>8:03</h6>
                                     </div>
                                     <div class="clearfix"> </div>
                                 </div>
+                                <?php } ?>
                                 <div class="activity-row">                                                                       <div class="col-xs-8 activity-desc">
                                         <h5>Grand Opening</h5>
                                         <p>Discount 50% for loyal members </p>

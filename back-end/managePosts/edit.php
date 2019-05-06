@@ -48,9 +48,7 @@ if(isset($_POST['edit'])){
     </tr>
     </table>
 </form>    
-<<<<<<< HEAD
 
-=======
 <?php
 if(isset($_POST['edit'])){
     $title=$_POST['title'];
@@ -67,6 +65,5 @@ else if (isset($_POST['delete'])){
     header('location:viewall.php');
 }
 ?>
->>>>>>> 97e4a14b3e1e17e9aac5af587ccf7f232e049b86
 
 

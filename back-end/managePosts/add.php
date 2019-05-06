@@ -1,5 +1,15 @@
 <?php
 include('../config.php');
+
+if(isset($_POST['add'])){
+    $title=$_POST['title'];
+    $summary=$_POST['summary'];
+    $content=$_POST['content'];
+    $photo=$_POST['photo'];
+    $sql="INSERT INTO posts VALUES(NULL,'$title','$summary','$content','$photo')";
+    mysqli_query($con, $sql);
+    header('location:view.php');
+
 include '../../upload.php';
 
 $sql = "select * from dishes order by id desc" or die();
@@ -27,6 +37,7 @@ if (isset($_POST['add'])) {
     }
 }
 ?>
+
 <form method="post" enctype="multipart/form-data">
     <table width="100%" border="1">
         <tr>
@@ -86,4 +97,3 @@ if (isset($_POST['add'])) {
         </div>
     </body>
 </html>
-

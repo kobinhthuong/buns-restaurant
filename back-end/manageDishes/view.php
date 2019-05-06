@@ -59,5 +59,6 @@ $run = mysqli_query($con, $sql);
         <!-- Metis Menu Plugin JavaScript -->
         <script src="js/metisMenu.min.js"></script>
         <script src="js/custom.js"></script>
+        
     </body>
 </html>

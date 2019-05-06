@@ -48,9 +48,7 @@ if(isset($_POST['edit'])){
     </tr>
     </table>
 </form>    
-<<<<<<< HEAD
 
-=======
 <?php
 if(isset($_POST['edit'])){
     $title=$_POST['title'];
@@ -59,14 +57,13 @@ if(isset($_POST['edit'])){
    $photo=$_POST['photo'];
     $sql="update posts set title='$title',summary='$summary',content='$content',photo='$photo' where id =$id ";
     $run= mysqli_query($con, $sql);
-    header('location:viewall.php');
+    header('location:view.php');
 }
 else if (isset($_POST['delete'])){
     $sql="delete from posts where id ='$id' ";
     mysqli_query($con, $sql);
-    header('location:viewall.php');
+    header('location:view.php');
 }
 ?>
->>>>>>> 97e4a14b3e1e17e9aac5af587ccf7f232e049b86
 
 

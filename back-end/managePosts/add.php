@@ -27,7 +27,6 @@ if (isset($_POST['add'])) {
     }
 }
 ?>
-<<<<<<< HEAD
 <form method="post" enctype="multipart/form-data">
     <table width="100%" border="1">
         <tr>
@@ -52,7 +51,6 @@ if (isset($_POST['add'])) {
         <tr>
         <td colspan="2"> <div align="center"> 
                 <button name ="add" value="add">add</button>
-=======
 <!DOCTYPE HTML>
 <html>
     <!--header-->
@@ -110,7 +108,6 @@ if (isset($_POST['add'])) {
                         </table>-->
                     </form>
                 </div>
->>>>>>> 97e4a14b3e1e17e9aac5af587ccf7f232e049b86
             </div>
             <?php include ('../layouts/footer/footer.php'); ?>
         </div>
